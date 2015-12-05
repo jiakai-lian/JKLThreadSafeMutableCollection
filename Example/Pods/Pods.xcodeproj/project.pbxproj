@@ -1,0 +1,1006 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10AC1E3EC3E895B9829B7F41 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8EB118650FA4EF44C7ABE7 /* Foundation.framework */; };
+		20E4833602EE62D050055962 /* JKLThreadSafeMutableCollection.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E6006B9401C79312D2794209 /* JKLThreadSafeMutableCollection.bundle */; };
+		284D88BE0E17FD7A2868A88D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8EB118650FA4EF44C7ABE7 /* Foundation.framework */; };
+		4856F30BC96E1E99924F05CA /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B22E42E56CEA7FD91836C /* ReplaceMe.m */; };
+		4D2A3FA3019E21BAB743E40C /* JKLThreadSafeMutableCollection.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 198C8BA5CF19AD920DB4F86C /* JKLThreadSafeMutableCollection.bundle */; };
+		5455DD7AE83F0564D843E627 /* Pods-JKLThreadSafeMutableCollection_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 949FE058DA41EEB15CEE28B9 /* Pods-JKLThreadSafeMutableCollection_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ECDE56034F1CA8C964F1B57 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8EB118650FA4EF44C7ABE7 /* Foundation.framework */; };
+		6A26751F0420F199B6C449A1 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A668C917DADC0B7E746D8EF /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84343268822924CEC8EA68FD /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95A88AC2B03EF55CC3A8CE77 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-dummy.m */; };
+		A9F3A007619CF26EBBE601F4 /* Pods-JKLThreadSafeMutableCollection_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 564F5FCD9B4C15CC8D13045E /* Pods-JKLThreadSafeMutableCollection_Tests-dummy.m */; };
+		ACA64DE8983090B058CB7DEA /* Pods-JKLThreadSafeMutableCollection_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B09CED3A1776BD30FA6F2ACB /* Pods-JKLThreadSafeMutableCollection_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFFAA9F07D8680F8806BE6B4 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E705668AFCC5E7C5908C09 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C425B0984A0BC29AF976A008 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F8B22E42E56CEA7FD91836C /* ReplaceMe.m */; };
+		D8F7FE22B960A32F3520C8A7 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A485E14B52BE4DFE8E218395 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-dummy.m */; };
+		EEDF4872508009D0858E58AD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D8EB118650FA4EF44C7ABE7 /* Foundation.framework */; };
+		FFD1B5F14727C0172B4212EB /* Pods-JKLThreadSafeMutableCollection_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B27256A1CEDCD0BDE793DA7 /* Pods-JKLThreadSafeMutableCollection_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9CBF8B29B60886D610F0E14B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A56DB4B9FA6A33277D6EC7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97833E6DEB358627F08FB1C7;
+			remoteInfo = "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection";
+		};
+		B68A3A23B87DABC108900674 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A56DB4B9FA6A33277D6EC7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C1D664BF22D0751EDF00318;
+			remoteInfo = "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection";
+		};
+		BE58E55A483F7F6706055111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A56DB4B9FA6A33277D6EC7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1B7D454134400B9415255E0;
+			remoteInfo = "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection";
+		};
+		DFBA754E4315ED5398B3A851 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1A56DB4B9FA6A33277D6EC7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59BB9FDC7E5570510E6D8048;
+			remoteInfo = "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D0B47E35E2506F16577A168 /* Pods-JKLThreadSafeMutableCollection_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKLThreadSafeMutableCollection_Example-resources.sh"; sourceTree = "<group>"; };
+		1285BE27FEA01E32E9711CD3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		198C8BA5CF19AD920DB4F86C /* JKLThreadSafeMutableCollection.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKLThreadSafeMutableCollection.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E705668AFCC5E7C5908C09 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-umbrella.h"; path = "../Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection/Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-umbrella.h"; sourceTree = "<group>"; };
+		2E498F1D8F28E9AD8D8D1E32 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3618581131F90BB67EE80A83 /* Pods-JKLThreadSafeMutableCollection_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKLThreadSafeMutableCollection_Tests-environment.h"; sourceTree = "<group>"; };
+		3D8EB118650FA4EF44C7ABE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		43D17D215677DB9B39A104FD /* Pods-JKLThreadSafeMutableCollection_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKLThreadSafeMutableCollection_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		444E5BEEA33DFFD39ECCD355 /* Pods-JKLThreadSafeMutableCollection_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKLThreadSafeMutableCollection_Example-frameworks.sh"; sourceTree = "<group>"; };
+		564F5FCD9B4C15CC8D13045E /* Pods-JKLThreadSafeMutableCollection_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKLThreadSafeMutableCollection_Tests-dummy.m"; sourceTree = "<group>"; };
+		5F8B22E42E56CEA7FD91836C /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
+		69642354A10E28F4AAFF4E53 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-prefix.pch"; sourceTree = "<group>"; };
+		6B3ADCA3F7D41362BF83A0AD /* Pods-JKLThreadSafeMutableCollection_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKLThreadSafeMutableCollection_Tests-resources.sh"; sourceTree = "<group>"; };
+		6CD0D6DB12E5A7B5127EB88E /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-Private.xcconfig"; path = "../Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection/Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-Private.xcconfig"; sourceTree = "<group>"; };
+		7B1DD35DB193782FF344FACC /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection.xcconfig"; sourceTree = "<group>"; };
+		7F627D7D22D056D3BAB3753A /* Pods-JKLThreadSafeMutableCollection_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JKLThreadSafeMutableCollection_Tests.modulemap"; sourceTree = "<group>"; };
+		86C8850A78E631FBEC0F3B15 /* Pods-JKLThreadSafeMutableCollection_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKLThreadSafeMutableCollection_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8A2350FAF38C9E685A647AEF /* Pods-JKLThreadSafeMutableCollection_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKLThreadSafeMutableCollection_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8AFAA0BEE58603AC4680F188 /* Pods-JKLThreadSafeMutableCollection_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JKLThreadSafeMutableCollection_Example.modulemap"; sourceTree = "<group>"; };
+		8B27256A1CEDCD0BDE793DA7 /* Pods-JKLThreadSafeMutableCollection_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKLThreadSafeMutableCollection_Example-dummy.m"; sourceTree = "<group>"; };
+		8BB398FD232DA335C2415C4D /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection.modulemap"; sourceTree = "<group>"; };
+		8E87483E4BF1740DCAAD9CCF /* Pods-JKLThreadSafeMutableCollection_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKLThreadSafeMutableCollection_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		922C50133F0FD4DF07737083 /* Pods-JKLThreadSafeMutableCollection_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKLThreadSafeMutableCollection_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93132B5464C2392E12262401 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-prefix.pch"; path = "../Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection/Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-prefix.pch"; sourceTree = "<group>"; };
+		945F4DAB5BD7A8F4EC4B446A /* Pods-JKLThreadSafeMutableCollection_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKLThreadSafeMutableCollection_Example-environment.h"; sourceTree = "<group>"; };
+		949FE058DA41EEB15CEE28B9 /* Pods-JKLThreadSafeMutableCollection_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKLThreadSafeMutableCollection_Example-umbrella.h"; sourceTree = "<group>"; };
+		95A88AC2B03EF55CC3A8CE77 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-dummy.m"; sourceTree = "<group>"; };
+		9A26E84A4E8B91A7C4EB7D81 /* JKLThreadSafeMutableCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKLThreadSafeMutableCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A668C917DADC0B7E746D8EF /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-umbrella.h"; sourceTree = "<group>"; };
+		A485E14B52BE4DFE8E218395 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-dummy.m"; path = "../Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection/Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-dummy.m"; sourceTree = "<group>"; };
+		AD11C8D2FA08FF988F6A26DA /* Pods-JKLThreadSafeMutableCollection_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKLThreadSafeMutableCollection_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		B09CED3A1776BD30FA6F2ACB /* Pods-JKLThreadSafeMutableCollection_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKLThreadSafeMutableCollection_Tests-umbrella.h"; sourceTree = "<group>"; };
+		B1433CE6F47B9AA91C0B8278 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B95BB1523DB39F9091843F74 /* Pods-JKLThreadSafeMutableCollection_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKLThreadSafeMutableCollection_Example.release.xcconfig"; sourceTree = "<group>"; };
+		BA77254BD97B747E31562CDC /* Pods_JKLThreadSafeMutableCollection_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKLThreadSafeMutableCollection_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE453BF71420CF0FECA4EFD0 /* JKLThreadSafeMutableCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKLThreadSafeMutableCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2AC09E3F2D4AB00FB9AD40F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection/Info.plist"; sourceTree = "<group>"; };
+		C5A4884E15C7E90EC526DFC0 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-Private.xcconfig"; sourceTree = "<group>"; };
+		CA0459AA85B251A39C1036D2 /* Pods_JKLThreadSafeMutableCollection_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKLThreadSafeMutableCollection_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEF730CB87CBA3D7FDF6C85B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E6006B9401C79312D2794209 /* JKLThreadSafeMutableCollection.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKLThreadSafeMutableCollection.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8D35112CC5F7ED829DDE890 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection.xcconfig"; path = "../Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection/Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection.xcconfig"; sourceTree = "<group>"; };
+		ED639C78435CE70DAC7C1B34 /* Pods-JKLThreadSafeMutableCollection_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKLThreadSafeMutableCollection_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EE9F6D8311A29F3541168BA3 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection.modulemap"; path = "../Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection/Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection.modulemap"; sourceTree = "<group>"; };
+		FB7FE171806EBB724FDA78DA /* Pods-JKLThreadSafeMutableCollection_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKLThreadSafeMutableCollection_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AF0504B5D5D44F3189523E8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		341C5A693F1DC634CB2270BD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E34DF03BBE9C161AA8A1A38 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEDF4872508009D0858E58AD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2B5A2AD5F7B10548F4AB2ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				284D88BE0E17FD7A2868A88D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D15F3759A0F3F9AB1C119CDB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5ECDE56034F1CA8C964F1B57 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F2ED3793F933311915D1A34A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10AC1E3EC3E895B9829B7F41 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		04DF7E0B3C06EA2DCE958338 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				198C8BA5CF19AD920DB4F86C /* JKLThreadSafeMutableCollection.bundle */,
+				E6006B9401C79312D2794209 /* JKLThreadSafeMutableCollection.bundle */,
+				9A26E84A4E8B91A7C4EB7D81 /* JKLThreadSafeMutableCollection.framework */,
+				BE453BF71420CF0FECA4EFD0 /* JKLThreadSafeMutableCollection.framework */,
+				CA0459AA85B251A39C1036D2 /* Pods_JKLThreadSafeMutableCollection_Example.framework */,
+				BA77254BD97B747E31562CDC /* Pods_JKLThreadSafeMutableCollection_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		192FC53E0F5359702BB98EAF /* Pods-JKLThreadSafeMutableCollection_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1285BE27FEA01E32E9711CD3 /* Info.plist */,
+				7F627D7D22D056D3BAB3753A /* Pods-JKLThreadSafeMutableCollection_Tests.modulemap */,
+				922C50133F0FD4DF07737083 /* Pods-JKLThreadSafeMutableCollection_Tests-acknowledgements.markdown */,
+				ED639C78435CE70DAC7C1B34 /* Pods-JKLThreadSafeMutableCollection_Tests-acknowledgements.plist */,
+				564F5FCD9B4C15CC8D13045E /* Pods-JKLThreadSafeMutableCollection_Tests-dummy.m */,
+				3618581131F90BB67EE80A83 /* Pods-JKLThreadSafeMutableCollection_Tests-environment.h */,
+				43D17D215677DB9B39A104FD /* Pods-JKLThreadSafeMutableCollection_Tests-frameworks.sh */,
+				6B3ADCA3F7D41362BF83A0AD /* Pods-JKLThreadSafeMutableCollection_Tests-resources.sh */,
+				B09CED3A1776BD30FA6F2ACB /* Pods-JKLThreadSafeMutableCollection_Tests-umbrella.h */,
+				8A2350FAF38C9E685A647AEF /* Pods-JKLThreadSafeMutableCollection_Tests.debug.xcconfig */,
+				86C8850A78E631FBEC0F3B15 /* Pods-JKLThreadSafeMutableCollection_Tests.release.xcconfig */,
+			);
+			name = "Pods-JKLThreadSafeMutableCollection_Tests";
+			path = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Tests";
+			sourceTree = "<group>";
+		};
+		1C6A8A9F09450FB893FAA566 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DC5C3B1011FFB6BEF465291F /* JKLThreadSafeMutableCollection */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		3DF57DD0A47F472F203893EA /* Pods-JKLThreadSafeMutableCollection_Example */ = {
+			isa = PBXGroup;
+			children = (
+				CEF730CB87CBA3D7FDF6C85B /* Info.plist */,
+				8AFAA0BEE58603AC4680F188 /* Pods-JKLThreadSafeMutableCollection_Example.modulemap */,
+				FB7FE171806EBB724FDA78DA /* Pods-JKLThreadSafeMutableCollection_Example-acknowledgements.markdown */,
+				8E87483E4BF1740DCAAD9CCF /* Pods-JKLThreadSafeMutableCollection_Example-acknowledgements.plist */,
+				8B27256A1CEDCD0BDE793DA7 /* Pods-JKLThreadSafeMutableCollection_Example-dummy.m */,
+				945F4DAB5BD7A8F4EC4B446A /* Pods-JKLThreadSafeMutableCollection_Example-environment.h */,
+				444E5BEEA33DFFD39ECCD355 /* Pods-JKLThreadSafeMutableCollection_Example-frameworks.sh */,
+				0D0B47E35E2506F16577A168 /* Pods-JKLThreadSafeMutableCollection_Example-resources.sh */,
+				949FE058DA41EEB15CEE28B9 /* Pods-JKLThreadSafeMutableCollection_Example-umbrella.h */,
+				AD11C8D2FA08FF988F6A26DA /* Pods-JKLThreadSafeMutableCollection_Example.debug.xcconfig */,
+				B95BB1523DB39F9091843F74 /* Pods-JKLThreadSafeMutableCollection_Example.release.xcconfig */,
+			);
+			name = "Pods-JKLThreadSafeMutableCollection_Example";
+			path = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Example";
+			sourceTree = "<group>";
+		};
+		4979C86B532CA81AEEDDEB51 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1433CE6F47B9AA91C0B8278 /* Info.plist */,
+				C2AC09E3F2D4AB00FB9AD40F /* Info.plist */,
+				8BB398FD232DA335C2415C4D /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection.modulemap */,
+				7B1DD35DB193782FF344FACC /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection.xcconfig */,
+				C5A4884E15C7E90EC526DFC0 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-Private.xcconfig */,
+				95A88AC2B03EF55CC3A8CE77 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-dummy.m */,
+				69642354A10E28F4AAFF4E53 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-prefix.pch */,
+				9A668C917DADC0B7E746D8EF /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-umbrella.h */,
+				EE9F6D8311A29F3541168BA3 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection.modulemap */,
+				E8D35112CC5F7ED829DDE890 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection.xcconfig */,
+				6CD0D6DB12E5A7B5127EB88E /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-Private.xcconfig */,
+				A485E14B52BE4DFE8E218395 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-dummy.m */,
+				93132B5464C2392E12262401 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-prefix.pch */,
+				22E705668AFCC5E7C5908C09 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection";
+			sourceTree = "<group>";
+		};
+		7126BE98A96FADA2BEC0F340 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3D8EB118650FA4EF44C7ABE7 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		87C020328DF3EB71E8FA8D8C = {
+			isa = PBXGroup;
+			children = (
+				2E498F1D8F28E9AD8D8D1E32 /* Podfile */,
+				1C6A8A9F09450FB893FAA566 /* Development Pods */,
+				DAFBC157758A01E6BED8D8FB /* Frameworks */,
+				04DF7E0B3C06EA2DCE958338 /* Products */,
+				C2473A4DC6ECC27A8692213C /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		C2473A4DC6ECC27A8692213C /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DF57DD0A47F472F203893EA /* Pods-JKLThreadSafeMutableCollection_Example */,
+				192FC53E0F5359702BB98EAF /* Pods-JKLThreadSafeMutableCollection_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CB6DB1D1741F3DC725F97F5F /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				5F8B22E42E56CEA7FD91836C /* ReplaceMe.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		CEA0B33FCADE2D73F248E2B0 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				CB6DB1D1741F3DC725F97F5F /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		DAFBC157758A01E6BED8D8FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7126BE98A96FADA2BEC0F340 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC5C3B1011FFB6BEF465291F /* JKLThreadSafeMutableCollection */ = {
+			isa = PBXGroup;
+			children = (
+				CEA0B33FCADE2D73F248E2B0 /* Pod */,
+				4979C86B532CA81AEEDDEB51 /* Support Files */,
+			);
+			name = JKLThreadSafeMutableCollection;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		524DDD1F56FFA51AECDD2F79 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A26751F0420F199B6C449A1 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		716772628105A026FE4EC6D5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5455DD7AE83F0564D843E627 /* Pods-JKLThreadSafeMutableCollection_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE5CC43851210F91FDD286F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFFAA9F07D8680F8806BE6B4 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F961B199DEF722EB20394BC9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACA64DE8983090B058CB7DEA /* Pods-JKLThreadSafeMutableCollection_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		59BB9FDC7E5570510E6D8048 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E314D1B508CD684A7313F7DD /* Build configuration list for PBXNativeTarget "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection" */;
+			buildPhases = (
+				C117D1C7F4935C7CF60BA118 /* Sources */,
+				D15F3759A0F3F9AB1C119CDB /* Frameworks */,
+				023C50EF6ECD0B1DF9704DD2 /* Resources */,
+				524DDD1F56FFA51AECDD2F79 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				72CDD7270A4CAEA834407FC9 /* PBXTargetDependency */,
+			);
+			name = "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection";
+			productName = "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection";
+			productReference = 9A26E84A4E8B91A7C4EB7D81 /* JKLThreadSafeMutableCollection.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5C1D664BF22D0751EDF00318 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9264DD1527CEB7C0AA30C00 /* Build configuration list for PBXNativeTarget "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection" */;
+			buildPhases = (
+				D51507F7DFB6425793473F7E /* Sources */,
+				6E34DF03BBE9C161AA8A1A38 /* Frameworks */,
+				13578D751E307B39C1877990 /* Resources */,
+				AE5CC43851210F91FDD286F2 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE0CE5B3F21BE972922636C8 /* PBXTargetDependency */,
+			);
+			name = "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection";
+			productName = "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection";
+			productReference = BE453BF71420CF0FECA4EFD0 /* JKLThreadSafeMutableCollection.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		73CCA6C2AC5BF9F0C502FFAE /* Pods-JKLThreadSafeMutableCollection_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 512705E90C66FF0B27ED6786 /* Build configuration list for PBXNativeTarget "Pods-JKLThreadSafeMutableCollection_Example" */;
+			buildPhases = (
+				A768BEF496E614AC2E6C3F74 /* Sources */,
+				F2ED3793F933311915D1A34A /* Frameworks */,
+				716772628105A026FE4EC6D5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE100FA93BEA0B38A02DA1B4 /* PBXTargetDependency */,
+			);
+			name = "Pods-JKLThreadSafeMutableCollection_Example";
+			productName = "Pods-JKLThreadSafeMutableCollection_Example";
+			productReference = CA0459AA85B251A39C1036D2 /* Pods_JKLThreadSafeMutableCollection_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		97833E6DEB358627F08FB1C7 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CF45FE81175C72DD45ACE46 /* Build configuration list for PBXNativeTarget "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection" */;
+			buildPhases = (
+				285126F24C015E76C30DCB40 /* Sources */,
+				341C5A693F1DC634CB2270BD /* Frameworks */,
+				4A519F102C74564FC013ABF4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection";
+			productName = "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection";
+			productReference = E6006B9401C79312D2794209 /* JKLThreadSafeMutableCollection.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		DBFD8EA7399941B97FC66531 /* Pods-JKLThreadSafeMutableCollection_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D591E8ABB75F5C6D213C488B /* Build configuration list for PBXNativeTarget "Pods-JKLThreadSafeMutableCollection_Tests" */;
+			buildPhases = (
+				C39B874540D628CB89251EC1 /* Sources */,
+				C2B5A2AD5F7B10548F4AB2ED /* Frameworks */,
+				F961B199DEF722EB20394BC9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				311F7D9DBAF372B0448F1340 /* PBXTargetDependency */,
+			);
+			name = "Pods-JKLThreadSafeMutableCollection_Tests";
+			productName = "Pods-JKLThreadSafeMutableCollection_Tests";
+			productReference = BA77254BD97B747E31562CDC /* Pods_JKLThreadSafeMutableCollection_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F1B7D454134400B9415255E0 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AB7E8EE26B2C95B5A3F6198 /* Build configuration list for PBXNativeTarget "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection" */;
+			buildPhases = (
+				AE7A727554F8354CA0A1E663 /* Sources */,
+				0AF0504B5D5D44F3189523E8 /* Frameworks */,
+				8828EFC8C9F87FF6674BF4C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection";
+			productName = "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection";
+			productReference = 198C8BA5CF19AD920DB4F86C /* JKLThreadSafeMutableCollection.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1A56DB4B9FA6A33277D6EC7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+			};
+			buildConfigurationList = C10F5F91125D94A308164E52 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 87C020328DF3EB71E8FA8D8C;
+			productRefGroup = 04DF7E0B3C06EA2DCE958338 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				73CCA6C2AC5BF9F0C502FFAE /* Pods-JKLThreadSafeMutableCollection_Example */,
+				59BB9FDC7E5570510E6D8048 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection */,
+				97833E6DEB358627F08FB1C7 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection */,
+				DBFD8EA7399941B97FC66531 /* Pods-JKLThreadSafeMutableCollection_Tests */,
+				5C1D664BF22D0751EDF00318 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection */,
+				F1B7D454134400B9415255E0 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		023C50EF6ECD0B1DF9704DD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20E4833602EE62D050055962 /* JKLThreadSafeMutableCollection.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		13578D751E307B39C1877990 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D2A3FA3019E21BAB743E40C /* JKLThreadSafeMutableCollection.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4A519F102C74564FC013ABF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8828EFC8C9F87FF6674BF4C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		285126F24C015E76C30DCB40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A768BEF496E614AC2E6C3F74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD1B5F14727C0172B4212EB /* Pods-JKLThreadSafeMutableCollection_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE7A727554F8354CA0A1E663 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C117D1C7F4935C7CF60BA118 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84343268822924CEC8EA68FD /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-dummy.m in Sources */,
+				C425B0984A0BC29AF976A008 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39B874540D628CB89251EC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9F3A007619CF26EBBE601F4 /* Pods-JKLThreadSafeMutableCollection_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D51507F7DFB6425793473F7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8F7FE22B960A32F3520C8A7 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-dummy.m in Sources */,
+				4856F30BC96E1E99924F05CA /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		311F7D9DBAF372B0448F1340 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection";
+			target = 5C1D664BF22D0751EDF00318 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection */;
+			targetProxy = B68A3A23B87DABC108900674 /* PBXContainerItemProxy */;
+		};
+		72CDD7270A4CAEA834407FC9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection";
+			target = 97833E6DEB358627F08FB1C7 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection */;
+			targetProxy = 9CBF8B29B60886D610F0E14B /* PBXContainerItemProxy */;
+		};
+		BE0CE5B3F21BE972922636C8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection";
+			target = F1B7D454134400B9415255E0 /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection */;
+			targetProxy = BE58E55A483F7F6706055111 /* PBXContainerItemProxy */;
+		};
+		FE100FA93BEA0B38A02DA1B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection";
+			target = 59BB9FDC7E5570510E6D8048 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection */;
+			targetProxy = DFBA754E4315ED5398B3A851 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05A680712F6EA3D8132FCC18 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86C8850A78E631FBEC0F3B15 /* Pods-JKLThreadSafeMutableCollection_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Tests/Pods-JKLThreadSafeMutableCollection_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JKLThreadSafeMutableCollection_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0B556393B3EC30072119BB43 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CD0D6DB12E5A7B5127EB88E /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-JKLThreadSafeMutableCollection_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JKLThreadSafeMutableCollection;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		0C86737E8B8931C5AC582F4D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E010C8F54A80A4B4C6D5DD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CD0D6DB12E5A7B5127EB88E /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection/Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection/Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JKLThreadSafeMutableCollection;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		608F44127171313BF557766D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A2350FAF38C9E685A647AEF /* Pods-JKLThreadSafeMutableCollection_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Tests/Pods-JKLThreadSafeMutableCollection_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JKLThreadSafeMutableCollection_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6360D715918BC9F9B9B1F3F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5A4884E15C7E90EC526DFC0 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-JKLThreadSafeMutableCollection_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JKLThreadSafeMutableCollection;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		719C91B2A5F1097DE056F7B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		8F959BD2156D0EB6C154C8CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CD0D6DB12E5A7B5127EB88E /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection/Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection/Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JKLThreadSafeMutableCollection;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		92D9E208CA3A51155391597E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD11C8D2FA08FF988F6A26DA /* Pods-JKLThreadSafeMutableCollection_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Example/Pods-JKLThreadSafeMutableCollection_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JKLThreadSafeMutableCollection_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9692072355836C645C3CA1A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B95BB1523DB39F9091843F74 /* Pods-JKLThreadSafeMutableCollection_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Example/Pods-JKLThreadSafeMutableCollection_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_JKLThreadSafeMutableCollection_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BB2F0AE3951796E66E4F1F1F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5A4884E15C7E90EC526DFC0 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection/Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection/Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = JKLThreadSafeMutableCollection;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D0F13828BA1BF99F127B4397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5A4884E15C7E90EC526DFC0 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-JKLThreadSafeMutableCollection_Example";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JKLThreadSafeMutableCollection;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		DF69AB4CC1577A957DCAB736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CD0D6DB12E5A7B5127EB88E /* Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-Private.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-JKLThreadSafeMutableCollection_Tests";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JKLThreadSafeMutableCollection;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F1CCCB06DC6D2CEE8F3162A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5A4884E15C7E90EC526DFC0 /* Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection/Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection/Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = JKLThreadSafeMutableCollection;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AB7E8EE26B2C95B5A3F6198 /* Build configuration list for PBXNativeTarget "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF69AB4CC1577A957DCAB736 /* Debug */,
+				0B556393B3EC30072119BB43 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		512705E90C66FF0B27ED6786 /* Build configuration list for PBXNativeTarget "Pods-JKLThreadSafeMutableCollection_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92D9E208CA3A51155391597E /* Debug */,
+				9692072355836C645C3CA1A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CF45FE81175C72DD45ACE46 /* Build configuration list for PBXNativeTarget "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6360D715918BC9F9B9B1F3F8 /* Debug */,
+				D0F13828BA1BF99F127B4397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C10F5F91125D94A308164E52 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				719C91B2A5F1097DE056F7B5 /* Debug */,
+				0C86737E8B8931C5AC582F4D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D591E8ABB75F5C6D213C488B /* Build configuration list for PBXNativeTarget "Pods-JKLThreadSafeMutableCollection_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				608F44127171313BF557766D /* Debug */,
+				05A680712F6EA3D8132FCC18 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E314D1B508CD684A7313F7DD /* Build configuration list for PBXNativeTarget "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB2F0AE3951796E66E4F1F1F /* Debug */,
+				F1CCCB06DC6D2CEE8F3162A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9264DD1527CEB7C0AA30C00 /* Build configuration list for PBXNativeTarget "Pods-JKLThreadSafeMutableCollection_Tests-JKLThreadSafeMutableCollection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E010C8F54A80A4B4C6D5DD9 /* Debug */,
+				8F959BD2156D0EB6C154C8CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1A56DB4B9FA6A33277D6EC7E /* Project object */;
+}

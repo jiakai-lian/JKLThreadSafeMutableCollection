@@ -1,0 +1,14 @@
+PODS:
+  - JKLThreadSafeMutableCollection (0.1.0)
+
+DEPENDENCIES:
+  - JKLThreadSafeMutableCollection (from `../`)
+
+EXTERNAL SOURCES:
+  JKLThreadSafeMutableCollection:
+    :path: ../
+
+SPEC CHECKSUMS:
+  JKLThreadSafeMutableCollection: 115bd6cd5efc24baf7705a7446b1bb7e5519fdbf
+
+COCOAPODS: 0.37.1

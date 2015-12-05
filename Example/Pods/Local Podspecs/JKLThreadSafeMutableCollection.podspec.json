@@ -1,0 +1,25 @@
+{
+  "name": "JKLThreadSafeMutableCollection",
+  "version": "0.1.0",
+  "summary": "A short description of JKLThreadSafeMutableCollection.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/JKLThreadSafeMutableCollection",
+  "license": "MIT",
+  "authors": {
+    "jiakai lian": "jiakai.lian@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/JKLThreadSafeMutableCollection.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "JKLThreadSafeMutableCollection": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

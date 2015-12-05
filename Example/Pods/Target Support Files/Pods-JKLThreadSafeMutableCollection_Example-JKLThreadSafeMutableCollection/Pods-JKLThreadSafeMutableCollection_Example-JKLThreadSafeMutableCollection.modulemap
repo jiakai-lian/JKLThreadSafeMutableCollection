@@ -1,0 +1,6 @@
+framework module JKLThreadSafeMutableCollection {
+  umbrella header "Pods-JKLThreadSafeMutableCollection_Example-JKLThreadSafeMutableCollection-umbrella.h"
+
+  export *
+  module * { export * }
+}

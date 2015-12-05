@@ -1,0 +1,6 @@
+framework module Pods_JKLThreadSafeMutableCollection_Tests {
+  umbrella header "Pods-JKLThreadSafeMutableCollection_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
