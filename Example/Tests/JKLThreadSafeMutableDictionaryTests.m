@@ -128,16 +128,6 @@
     }
 }
 
-//- (void) testCaseInitWithObjectsForKeysCount {
-//    self.dic = [[JKLThreadSafeMutableDictionary alloc] initWithObjects:self.sampleValues
-//                                                               forKeys:self.sampleKeys count:self.sampleKeys.count];
-//    XCTAssertNotNil(self.dic);
-//    XCTAssertEqual(self.dic.count, self.sampleDictionary.count);
-//    for (id <NSCopying> key in self.sampleDictionary.allKeys) {
-//        XCTAssert([self.sampleDictionary[key] isEqualToString:self.dic[key]]);
-//    }
-//}
-
 - (void)testCount {
     XCTAssertEqual(self.dic.count, self.sampleDictionary.count);
 }
