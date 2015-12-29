@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JKLThreadSafeMutableDictionary
-    : NSObject  //<NSCopying, NSMutableCopying, NSSecureCoding,
-                //NSFastEnumeration>
+@interface JKLThreadSafeMutableDictionary: NSObject <NSCopying, NSMutableCopying>
 
 - (NSUInteger)count;
 - (nullable id)objectForKey:(id<NSCopying>)aKey;

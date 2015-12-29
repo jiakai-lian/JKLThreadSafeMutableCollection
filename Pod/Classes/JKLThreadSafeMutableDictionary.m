@@ -171,6 +171,35 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
     return desc;
 }
 
+#pragma mark - NSCopying
+
+- (id)copyWithZone:(nullable NSZone *)zone
+{
+    __block id copiedItem       = nil;
+    __weak typeof(self) weakSelf = self;
+    
+    dispatch_sync(self.queue, ^{
+        __strong typeof(self) strongSelf = weakSelf;
+        copiedItem = [strongSelf.dictionary copy];
+    });
+    
+    return copiedItem;
+}
+
+#pragma mark - NSMutableCopying
+- (id)mutableCopyWithZone:(nullable NSZone *)zone
+{
+    __block id copiedItem       = nil;
+    __weak typeof(self) weakSelf = self;
+    
+    dispatch_sync(self.queue, ^{
+        __strong typeof(self) strongSelf = weakSelf;
+        copiedItem = [strongSelf.dictionary mutableCopy];
+    });
+    
+    return copiedItem;
+}
+
 @end
 
 #pragma clang diagnostic pop
