@@ -41,6 +41,12 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
                                  forKeys:keys];
 }
 
++ (instancetype)dictionaryWithObject:(id)object
+                              forKey:(id <NSCopying>)key {
+    return [[self alloc] initWithObject:object
+                                 forKey:key];
+}
+
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -74,6 +80,29 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
         _dictionary =
                 [NSMutableDictionary dictionaryWithObjects:objects
                                                    forKeys:keys];
+    }
+    return self;
+}
+
+- (instancetype)initWithObject:(id)object
+                        forKey:(id <NSCopying>)key {
+    self = [self init];
+    if (self) {
+        _dictionary =
+                [NSMutableDictionary dictionaryWithObject:object
+                                                   forKey:key];
+    }
+    return self;
+}
+
+- (instancetype)initWithDictionary:
+        (NSDictionary<id <NSCopying>, id> *)otherDictionary
+                         copyItems:(BOOL)flag {
+    self = [self init];
+    if (self) {
+        _dictionary =
+                [[NSMutableDictionary alloc] initWithDictionary:otherDictionary
+                                                      copyItems:flag];
     }
     return self;
 }
@@ -142,6 +171,33 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
     return desc;
 }
 
+//- (void)enumerateKeysAndObjectsUsingBlock:
+//(void (^)(id<NSCopying> key, id obj, BOOL *stop))block
+//{
+//    __weak typeof(self) weakSelf = self;
+//    
+//    dispatch_sync(self.queue, ^{
+//        __strong typeof(self) strongSelf = weakSelf;
+//        [strongSelf.dictionary enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+//            block(key, obj, stop);
+//        }];
+//    });
+//}
+//
+//- (void)enumerateKeysAndObjectsWithOptions:(NSEnumerationOptions)opts
+//                                usingBlock:(void (^)(id<NSCopying> key, id obj,
+//                                                     BOOL *stop))block
+//{
+//    __weak typeof(self) weakSelf = self;
+//    
+//    dispatch_sync(self.queue, ^{
+//        __strong typeof(self) strongSelf = weakSelf;
+//        [strongSelf.dictionary enumerateKeysAndObjectsWithOptions:opts
+//         usingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+//            block(key, obj, stop);
+//        }];
+//    });
+//}
 
 @end
 

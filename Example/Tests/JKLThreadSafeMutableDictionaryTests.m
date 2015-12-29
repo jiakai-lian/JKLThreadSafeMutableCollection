@@ -14,6 +14,8 @@
 @property(nonatomic, copy) NSDictionary                     *sampleDictionary;
 @property(nonatomic, copy) NSArray                          *sampleValues;
 @property(nonatomic, copy) NSArray                          *sampleKeys;
+@property(nonatomic, copy) NSSortDescriptor *sort;
+
 @end
 
 @implementation JKLThreadSafeMutableDictionaryTests
@@ -21,11 +23,13 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    self.sort = [NSSortDescriptor sortDescriptorWithKey:@"self" ascending:YES];
 
-    self.sampleValues     = @[@"value1", @"value2", @"value3"];
-    self.sampleKeys       = @[@"key1", @"key2", @"key3"];
+    self.sampleValues     = @[@"value1", @"value2", @"valueSame", @"valueSame"];
+    self.sampleKeys       = @[@"key1", @"key2", @"key3", @"key4"];
     self.sampleDictionary = [NSDictionary dictionaryWithObjects:self.sampleValues
                                                         forKeys:self.sampleKeys];
+
     self.dic              = [JKLThreadSafeMutableDictionary dictionaryWithDictionary:self.sampleDictionary];
 }
 
@@ -68,6 +72,14 @@
     }
 }
 
+- (void)testDictionaryWithObjectForKey {
+    self.dic = [JKLThreadSafeMutableDictionary dictionaryWithObject:self.sampleValues.firstObject
+                                                             forKey:self.sampleKeys.firstObject];
+    XCTAssertNotNil(self.dic);
+    XCTAssertEqual(self.dic.count, 1);
+    XCTAssert([self.sampleDictionary[self.sampleKeys.firstObject] isEqualToString:self.dic[self.sampleKeys.firstObject]]);
+}
+
 - (void)testInit {
     self.dic = [[JKLThreadSafeMutableDictionary alloc] init];
     XCTAssertNotNil(self.dic);
@@ -91,6 +103,24 @@
 - (void)testInitWithObjectsForKeys {
     self.dic = [[JKLThreadSafeMutableDictionary alloc] initWithObjects:self.sampleValues
                                                                forKeys:self.sampleKeys];
+    XCTAssertNotNil(self.dic);
+    XCTAssertEqual(self.dic.count, self.sampleDictionary.count);
+    for (id <NSCopying> key in self.sampleDictionary.allKeys) {
+        XCTAssert([self.sampleDictionary[key] isEqualToString:self.dic[key]]);
+    }
+}
+
+- (void)testInitWithObjectForKey {
+    self.dic = [[JKLThreadSafeMutableDictionary alloc] initWithObject:self.sampleValues.firstObject
+                                                             forKey:self.sampleKeys.firstObject];
+    XCTAssertNotNil(self.dic);
+    XCTAssertEqual(self.dic.count, 1);
+    XCTAssert([self.sampleDictionary[self.sampleKeys.firstObject] isEqualToString:self.dic[self.sampleKeys.firstObject]]);
+}
+
+- (void)testInitWithDictionaryCopyItems {
+    self.dic = [[JKLThreadSafeMutableDictionary alloc] initWithDictionary:self.sampleDictionary copyItems:YES];
+    
     XCTAssertNotNil(self.dic);
     XCTAssertEqual(self.dic.count, self.sampleDictionary.count);
     for (id <NSCopying> key in self.sampleDictionary.allKeys) {
@@ -165,8 +195,103 @@
     sleep(1);//due to internal dispatch barrier async implementation, wait for a second then check the result
 
     XCTAssertNil(self.dic[self.sampleKeys.firstObject]);
-
 }
+
+- (void)testAllKeys {
+    NSArray * allKeys = [self.dic allKeys];
+
+    XCTAssertEqual(allKeys.count, self.dic.count);
+    XCTAssertEqual(allKeys.count, self.sampleKeys.count);
+    for (id <NSCopying> key in allKeys) {
+        XCTAssertNotNil(self.dic[key]);
+    }
+}
+
+- (void)testAllKeysForObject {
+    NSArray * allKeys = [self.dic allKeysForObject:self.sampleValues.lastObject];
+    NSArray * sampleAllKeys = [self.sampleDictionary allKeysForObject:self.sampleValues.lastObject];
+
+    XCTAssertEqual(allKeys.count, sampleAllKeys.count);
+    for (id <NSCopying> key in allKeys) {
+        XCTAssert([self.sampleDictionary[key] isEqualToString:self.dic[key]]);
+    }
+}
+
+- (void)testAllValues {
+    NSArray * allValues = [[self.dic allValues] sortedArrayUsingDescriptors:@[self.sort]];
+
+    XCTAssertEqual(allValues.count, self.sampleValues.count);
+    XCTAssertEqual(allValues.count, self.dic.count);
+    for (int i = 0; i < allValues.count; ++i) {
+        XCTAssert([self.sampleValues[i] isEqualToString:allValues[i]]);
+    }
+}
+
+- (void)testDescription {
+    XCTAssertNotNil([self.dic description]);
+    XCTAssert([[self.dic description] isEqualToString:[self.sampleDictionary description]]);
+}
+
+- (void)testDescriptionInStringsFileFormat {
+    XCTAssertNotNil([self.dic descriptionInStringsFileFormat]);
+    XCTAssert([[self.sampleDictionary descriptionInStringsFileFormat] isEqualToString:[self.dic descriptionInStringsFileFormat]]);
+}
+
+- (void)testDescriptionWithLocale {
+    NSString * desc =  [self.dic descriptionWithLocale:[NSLocale systemLocale]];
+    XCTAssertNotNil(desc);
+    XCTAssert([[self.sampleDictionary descriptionWithLocale:[NSLocale systemLocale]] isEqualToString:desc]);
+}
+
+- (void)testDescriptionWithLocaleIndent {
+    static NSUInteger level = 1;
+    NSString * desc =  [self.dic descriptionWithLocale:[NSLocale systemLocale] indent:level];
+    XCTAssertNotNil(desc);
+    XCTAssert([[self.sampleDictionary descriptionWithLocale:[NSLocale systemLocale] indent:level] isEqualToString:desc]);
+}
+
+- (void)testIsEqualToDictionary {
+    XCTAssert([self.dic isEqualToDictionary:self.sampleDictionary]);
+}
+
+- (void)testObjectEnumerator {
+    NSEnumerator *enumerator = [self.dic objectEnumerator];
+    id           value         = nil;
+    while ((value = [enumerator nextObject]) != nil) {
+        BOOL isFound = NO;
+        for(id sampleValue in [self.sampleDictionary allValues])
+        {
+            if([sampleValue isEqualToString:value])
+            {
+                isFound = YES;
+            }
+        }
+        XCTAssert(isFound);
+    }
+}
+
+//- (void)testEnumerateKeysAndObjectsUsingBlock {
+//    [self.dic enumerateKeysAndObjectsUsingBlock:^(id <NSCopying> key, id obj, BOOL *stop) {
+//        XCTAssert([self.sampleDictionary[key] isEqualToString:obj]);
+//    }];
+//}
+//
+//- (void)testEnumerateKeysAndObjectsWithConcurrentOptionsUsingBlock {
+//    [self.dic enumerateKeysAndObjectsWithOptions:NSEnumerationConcurrent
+//                                      usingBlock:^(id <NSCopying> key, id obj, BOOL *stop) {
+//        XCTAssert([self.sampleDictionary[key] isEqualToString:obj]);
+//    }];
+//}
+//
+//- (void)testEnumerateKeysAndObjectsWithReverseOptionsUsingBlock {
+//    [self.dic enumerateKeysAndObjectsWithOptions:NSEnumerationReverse
+//                                      usingBlock:^(id <NSCopying> key, id obj, BOOL *stop) {
+//                                          XCTAssert([self.sampleDictionary[key] isEqualToString:obj]);
+//                                      }];
+//}
+
+
+//TODO: More test cases
 
 //TODO: normal creation, each method, encode/decode, fromJSON/toJSON, subscript, enumeration, copy/mutablecopy, multithreading
 
