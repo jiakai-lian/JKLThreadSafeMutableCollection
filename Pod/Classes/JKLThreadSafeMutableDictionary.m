@@ -21,6 +21,8 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
 
 @implementation JKLThreadSafeMutableDictionary
 
+#pragma mark - Object Life Cycle
+
 + (instancetype)dictionary {
     return [[self alloc] init];
 }
@@ -76,6 +78,8 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
     return self;
 }
 
+#pragma mark - Private Methods
+
 - (BOOL)respondsToSelector:(SEL)aSelector {
     if ([super respondsToSelector:aSelector]) return YES;
 
@@ -112,7 +116,7 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
             });
         } else {
             // read operations
-            dispatch_barrier_sync(self.queue, ^{
+            dispatch_sync(self.queue, ^{
                 __strong typeof(self) strongSelf = weakSelf;
                 [origInvocation invokeWithTarget:strongSelf.dictionary];
             });
@@ -123,6 +127,21 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
 - (void)doesNotRecognizeSelector:(SEL)aSelector {
     // Prevent NSInvalidArgumentException
 }
+
+#pragma mark - Public Methods
+
+- (NSString *)description {
+    __block NSString *desc       = nil;
+    __weak typeof(self) weakSelf = self;
+
+    dispatch_sync(self.queue, ^{
+        __strong typeof(self) strongSelf = weakSelf;
+        desc = [strongSelf.dictionary description];
+    });
+
+    return desc;
+}
+
 
 @end
 
