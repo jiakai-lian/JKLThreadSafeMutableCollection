@@ -270,27 +270,6 @@
     }
 }
 
-//- (void)testEnumerateKeysAndObjectsUsingBlock {
-//    [self.dic enumerateKeysAndObjectsUsingBlock:^(id <NSCopying> key, id obj, BOOL *stop) {
-//        XCTAssert([self.sampleDictionary[key] isEqualToString:obj]);
-//    }];
-//}
-//
-//- (void)testEnumerateKeysAndObjectsWithConcurrentOptionsUsingBlock {
-//    [self.dic enumerateKeysAndObjectsWithOptions:NSEnumerationConcurrent
-//                                      usingBlock:^(id <NSCopying> key, id obj, BOOL *stop) {
-//        XCTAssert([self.sampleDictionary[key] isEqualToString:obj]);
-//    }];
-//}
-//
-//- (void)testEnumerateKeysAndObjectsWithReverseOptionsUsingBlock {
-//    [self.dic enumerateKeysAndObjectsWithOptions:NSEnumerationReverse
-//                                      usingBlock:^(id <NSCopying> key, id obj, BOOL *stop) {
-//                                          XCTAssert([self.sampleDictionary[key] isEqualToString:obj]);
-//                                      }];
-//}
-
-
 //TODO: More test cases
 
 //TODO: normal creation, each method, encode/decode, fromJSON/toJSON, subscript, enumeration, copy/mutablecopy, multithreading

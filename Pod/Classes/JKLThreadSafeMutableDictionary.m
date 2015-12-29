@@ -171,34 +171,6 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
     return desc;
 }
 
-//- (void)enumerateKeysAndObjectsUsingBlock:
-//(void (^)(id<NSCopying> key, id obj, BOOL *stop))block
-//{
-//    __weak typeof(self) weakSelf = self;
-//    
-//    dispatch_sync(self.queue, ^{
-//        __strong typeof(self) strongSelf = weakSelf;
-//        [strongSelf.dictionary enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-//            block(key, obj, stop);
-//        }];
-//    });
-//}
-//
-//- (void)enumerateKeysAndObjectsWithOptions:(NSEnumerationOptions)opts
-//                                usingBlock:(void (^)(id<NSCopying> key, id obj,
-//                                                     BOOL *stop))block
-//{
-//    __weak typeof(self) weakSelf = self;
-//    
-//    dispatch_sync(self.queue, ^{
-//        __strong typeof(self) strongSelf = weakSelf;
-//        [strongSelf.dictionary enumerateKeysAndObjectsWithOptions:opts
-//         usingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
-//            block(key, obj, stop);
-//        }];
-//    });
-//}
-
 @end
 
 #pragma clang diagnostic pop
