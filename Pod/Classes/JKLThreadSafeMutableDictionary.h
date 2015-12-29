@@ -18,21 +18,21 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable id)objectForKey:(id<NSCopying>)aKey;
 - (NSEnumerator<id<NSCopying>> *)keyEnumerator;
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
-#if TARGET_OS_WIN32
-- (instancetype)initWithObjects:(const id[])objects
-                        forKeys:(const id<NSCopying>[])keys
-                          count:(NSUInteger)cnt;
-#else
-- (instancetype)initWithObjects:(const id[])objects
-                        forKeys:(const id<NSCopying>[])keys
-                          count:(NSUInteger)cnt NS_DESIGNATED_INITIALIZER;
-#endif
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder
-    NS_DESIGNATED_INITIALIZER;
+//#if TARGET_OS_WIN32
+//- (instancetype)initWithObjects:(const id[])objects
+//                        forKeys:(const id<NSCopying>[])keys
+//                          count:(NSUInteger)cnt;
+//#else
+//- (instancetype)initWithObjects:(const id[])objects
+//                        forKeys:(const id<NSCopying>[])keys
+//                          count:(NSUInteger)cnt NS_DESIGNATED_INITIALIZER;
+//#endif
+//- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder
+//    NS_DESIGNATED_INITIALIZER;
 
 - (void)removeObjectForKey:(id<NSCopying>)aKey;
 - (void)setObject:(id)anObject forKey:(id<NSCopying>)aKey;
-- (instancetype)initWithCapacity:(NSUInteger)numItems NS_DESIGNATED_INITIALIZER;
+- (instancetype)initWithCapacity:(NSUInteger)numItems;
 
 @end
 
@@ -94,15 +94,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)dictionary;
 + (instancetype)dictionaryWithObject:(id)object forKey:(id<NSCopying>)key;
-#if TARGET_OS_WIN32
-+ (instancetype)dictionaryWithObjects:(const id[])objects
-                              forKeys:(const id<NSCopying>[])keys
-                                count:(NSUInteger)cnt;
-#else
-+ (instancetype)dictionaryWithObjects:(const id[])objects
-                              forKeys:(const id<NSCopying>[])keys
-                                count:(NSUInteger)cnt;
-#endif
+//#if TARGET_OS_WIN32
+//+ (instancetype)dictionaryWithObjects:(const id[])objects
+//                              forKeys:(const id<NSCopying>[])keys
+//                                count:(NSUInteger)cnt;
+//#else
+//+ (instancetype)dictionaryWithObjects:(const id[])objects
+//                              forKeys:(const id<NSCopying>[])keys
+//                                count:(NSUInteger)cnt;
+//#endif
 
 + (instancetype)dictionaryWithObjectsAndKeys:
     (id)firstObject, ... NS_REQUIRES_NIL_TERMINATION
