@@ -260,6 +260,35 @@
     }
 }
 
+- (void)testMultiThreading {
+
+    static const NSUInteger DISPATCH_QUEUE_COUNT = 1000;
+    static const NSUInteger ITERATION_COUNT      = 100;
+    __weak typeof(self) weakSelf                 = self;
+
+    for (NSUInteger i = 0; i < ITERATION_COUNT; i++) {
+        @autoreleasepool {
+
+            self.dic = [JKLThreadSafeMutableDictionary dictionary];
+
+
+            dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+
+            dispatch_apply(DISPATCH_QUEUE_COUNT, queue, ^(size_t i) {
+                __strong typeof(self) strongSelf = weakSelf;
+                NSString              *str       = [NSString stringWithFormat:@"%zu",
+                                                                              i];
+                strongSelf.dic[str] = str;
+                NSUInteger n = strongSelf.dic.count;
+                n++;
+            });
+        }
+
+        XCTAssertEqual(DISPATCH_QUEUE_COUNT, self.dic.count);
+    }
+}
+
+
 //TODO: More test cases
 
 //TODO: normal creation, each method, encode/decode, fromJSON/toJSON, subscript, enumeration, copy/mutablecopy, multithreading
