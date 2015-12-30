@@ -8,11 +8,9 @@
 
 #import "JKLThreadSafeMutableDictionary.h"
 
-static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
-
 @interface JKLThreadSafeMutableDictionary ()
 @property(nonatomic, strong) NSMutableDictionary *internalObject;
-@property(nonatomic, strong) dispatch_queue_t    queue;
+@property(nonatomic, strong, readonly) dispatch_queue_t    queue;
 
 @end
 
@@ -51,7 +49,6 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
     self = [super init];
     if (self) {
         _internalObject = [NSMutableDictionary dictionary];
-        _queue          = dispatch_queue_create(QUEUE_NAME, DISPATCH_QUEUE_CONCURRENT);
     }
     return self;
 }
@@ -115,7 +112,17 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
     return self;
 }
 
-#pragma mark - Private Methods
+#pragma mark - MultiThreading Core Methods
+
+- (dispatch_queue_t)queue {
+    static dispatch_queue_t queue;
+    static dispatch_once_t  onceToken;
+    dispatch_once(&onceToken, ^{
+        queue = dispatch_queue_create("com.jiakai.JKLThreadSafeMutableDictionary", DISPATCH_QUEUE_CONCURRENT);
+    });
+
+    return queue;
+}
 
 - (BOOL)respondsToSelector:(SEL)aSelector {
     if ([super respondsToSelector:aSelector]) return YES;
@@ -165,11 +172,6 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
     // Prevent NSInvalidArgumentException
 }
 
-- (void)encodeWithCoder:(NSCoder *)coder {
-    [coder encodeObject:self.internalObject
-                 forKey:NSStringFromSelector(@selector(internalObject))];
-}
-
 #pragma mark - Public Methods
 
 - (NSString *)description {
@@ -184,32 +186,38 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
     return desc;
 }
 
+#pragma mark - NSCoding
+
+- (void)encodeWithCoder:(NSCoder *)coder {
+    [coder encodeObject:self.internalObject
+                 forKey:NSStringFromSelector(@selector(internalObject))];
+}
+
 #pragma mark - NSCopying
 
-- (id)copyWithZone:(nullable NSZone *)zone
-{
-    __block id copiedItem       = nil;
+- (id)copyWithZone:(nullable NSZone *)zone {
+    __block id copiedItem        = nil;
     __weak typeof(self) weakSelf = self;
-    
+
     dispatch_sync(self.queue, ^{
         __strong typeof(self) strongSelf = weakSelf;
         copiedItem = [strongSelf.internalObject copy];
     });
-    
+
     return copiedItem;
 }
 
 #pragma mark - NSMutableCopying
-- (id)mutableCopyWithZone:(nullable NSZone *)zone
-{
-    __block id copiedItem       = nil;
+
+- (id)mutableCopyWithZone:(nullable NSZone *)zone {
+    __block id copiedItem        = nil;
     __weak typeof(self) weakSelf = self;
-    
+
     dispatch_sync(self.queue, ^{
         __strong typeof(self) strongSelf = weakSelf;
         copiedItem = [JKLThreadSafeMutableDictionary dictionaryWithDictionary:strongSelf.internalObject];
     });
-    
+
     return copiedItem;
 }
 

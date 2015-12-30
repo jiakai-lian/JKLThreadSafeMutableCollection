@@ -304,8 +304,8 @@
 }
 
 - (void)testArchiveUnarchive {
-    NSData * data = [NSKeyedArchiver archivedDataWithRootObject:self.dic];
-    JKLThreadSafeMutableDictionary * unarchivedDic = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+    NSData                         *data          = [NSKeyedArchiver archivedDataWithRootObject:self.dic];
+    JKLThreadSafeMutableDictionary *unarchivedDic = [NSKeyedUnarchiver unarchiveObjectWithData:data];
 
     XCTAssert([unarchivedDic isKindOfClass:[JKLThreadSafeMutableDictionary class]]);
     XCTAssert([unarchivedDic isEqualToDictionary:[self.dic copy]]);
