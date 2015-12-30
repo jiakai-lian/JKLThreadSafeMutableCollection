@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02E95DBF741B0CD572504958 /* Pods_JKLThreadSafeMutableCollection_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B972A89C067135795AC8ACE /* Pods_JKLThreadSafeMutableCollection_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		02E95DBF741B0CD572504958 /* Pods_JKLThreadSafeMutableCollection_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B972A89C067135795AC8ACE /* Pods_JKLThreadSafeMutableCollection_Tests.framework */; };
 		3EF28AFD1C3159D800E0A10B /* JKLThreadSafeMutableDictionaryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EF28AFC1C3159D800E0A10B /* JKLThreadSafeMutableDictionaryTests.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
@@ -23,7 +23,7 @@
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		85DB8A1F1C32B88A00730D9D /* JKLThreadSafeMutableArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DB8A1E1C32B88A00730D9D /* JKLThreadSafeMutableArrayTests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		D107318AAA5D63CD4718D092 /* Pods_JKLThreadSafeMutableCollection_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92EF5E57571AE1DC4515E62A /* Pods_JKLThreadSafeMutableCollection_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D107318AAA5D63CD4718D092 /* Pods_JKLThreadSafeMutableCollection_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92EF5E57571AE1DC4515E62A /* Pods_JKLThreadSafeMutableCollection_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

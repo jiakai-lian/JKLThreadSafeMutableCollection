@@ -1,5 +1,0 @@
-#import <Foundation/Foundation.h>
-@interface PodsDummy_Pods_JKLThreadSafeMutableCollection_Tests_JKLThreadSafeMutableCollection : NSObject
-@end
-@implementation PodsDummy_Pods_JKLThreadSafeMutableCollection_Tests_JKLThreadSafeMutableCollection
-@end
