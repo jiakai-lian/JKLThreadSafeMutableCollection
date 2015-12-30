@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JKLThreadSafeMutableArray : NSObject <NSCopying, NSMutableCopying>
+@interface JKLThreadSafeMutableArray : NSObject <NSCopying, NSMutableCopying, NSCoding>
 
 - (NSUInteger) count;
 - (id)objectAtIndex:(NSUInteger)index;
@@ -94,7 +94,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)removeObject:(id)anObject;
 - (void)removeObjectIdenticalTo:(id)anObject inRange:(NSRange)range;
 - (void)removeObjectIdenticalTo:(id)anObject;
-- (void)removeObjectsFromIndices:(NSUInteger *)indices numIndices:(NSUInteger)cnt NS_DEPRECATED(10_0, 10_6, 2_0, 4_0);
 - (void)removeObjectsInArray:(NSArray<id> *)otherArray;
 - (void)removeObjectsInRange:(NSRange)range;
 - (void)replaceObjectsInRange:(NSRange)range withObjectsFromArray:(NSArray<id> *)otherArray range:(NSRange)otherRange;

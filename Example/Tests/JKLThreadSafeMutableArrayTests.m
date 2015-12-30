@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import <JKLThreadSafeMutableCollection/JKLThreadSafeMutableArray.h>
 
 @interface JKLThreadSafeMutableArrayTests : XCTestCase
 
