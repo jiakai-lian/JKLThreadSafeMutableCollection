@@ -97,7 +97,7 @@ NS_ASSUME_NONNULL_BEGIN
     (NSDictionary<id<NSCopying>, id> *)otherDictionary;
 - (void)removeAllObjects;
 - (void)removeObjectsForKeys:(NSArray<id<NSCopying>> *)keyArray;
-- (void)setDictionary:(NSDictionary<id<NSCopying>, id> *)otherDictionary;
+- (void)setInternalObject:(NSDictionary<id<NSCopying>, id> *)otherInternalObject;
 - (void)setObject:(nullable id)obj
 forKeyedSubscript:(id)key NS_AVAILABLE(10_8, 6_0);
 

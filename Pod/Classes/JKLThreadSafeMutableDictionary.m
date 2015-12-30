@@ -11,7 +11,7 @@
 static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
 
 @interface JKLThreadSafeMutableDictionary ()
-@property(nonatomic, strong) NSMutableDictionary *dictionary;
+@property(nonatomic, strong) NSMutableDictionary *internalObject;
 @property(nonatomic, strong) dispatch_queue_t    queue;
 
 @end
@@ -50,8 +50,8 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _dictionary = [NSMutableDictionary dictionary];
-        _queue      = dispatch_queue_create(QUEUE_NAME, DISPATCH_QUEUE_CONCURRENT);
+        _internalObject = [NSMutableDictionary dictionary];
+        _queue          = dispatch_queue_create(QUEUE_NAME, DISPATCH_QUEUE_CONCURRENT);
     }
     return self;
 }
@@ -59,7 +59,7 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
 - (instancetype)initWithCapacity:(NSUInteger)numItems {
     self = [self init];
     if (self) {
-        _dictionary = [NSMutableDictionary dictionaryWithCapacity:numItems];
+        _internalObject = [NSMutableDictionary dictionaryWithCapacity:numItems];
     }
     return self;
 }
@@ -67,7 +67,7 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
 - (instancetype)initWithDictionary:(NSDictionary *)otherDictionary {
     self = [self init];
     if (self) {
-        _dictionary =
+        _internalObject =
                 [NSMutableDictionary dictionaryWithDictionary:otherDictionary];
     }
     return self;
@@ -77,7 +77,7 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
                         forKeys:(NSArray<id <NSCopying>> *)keys {
     self = [self init];
     if (self) {
-        _dictionary =
+        _internalObject =
                 [NSMutableDictionary dictionaryWithObjects:objects
                                                    forKeys:keys];
     }
@@ -88,7 +88,7 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
                         forKey:(id <NSCopying>)key {
     self = [self init];
     if (self) {
-        _dictionary =
+        _internalObject =
                 [NSMutableDictionary dictionaryWithObject:object
                                                    forKey:key];
     }
@@ -100,7 +100,7 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
                          copyItems:(BOOL)flag {
     self = [self init];
     if (self) {
-        _dictionary =
+        _internalObject =
                 [[NSMutableDictionary alloc] initWithDictionary:otherDictionary
                                                       copyItems:flag];
     }
@@ -110,7 +110,7 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
 - (id)initWithCoder:(NSCoder *)coder {
     self = [self init];
     if (self) {
-        _dictionary = [coder decodeObjectForKey:NSStringFromSelector(@selector(dictionary))];
+        _internalObject = [coder decodeObjectForKey:NSStringFromSelector(@selector(internalObject))];
     }
     return self;
 }
@@ -120,7 +120,7 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
 - (BOOL)respondsToSelector:(SEL)aSelector {
     if ([super respondsToSelector:aSelector]) return YES;
 
-    if ([self.dictionary respondsToSelector:aSelector]) {
+    if ([self.internalObject respondsToSelector:aSelector]) {
         return YES;
     }
 
@@ -133,15 +133,15 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
 
     // if not, try our dictionary
     if (!signature) {
-        if ([self.dictionary respondsToSelector:aSelector]) {
-            return [self.dictionary methodSignatureForSelector:aSelector];
+        if ([self.internalObject respondsToSelector:aSelector]) {
+            return [self.internalObject methodSignatureForSelector:aSelector];
         }
     }
     return signature;
 }
 
 - (void)forwardInvocation:(NSInvocation *)origInvocation {
-    if ([self.dictionary respondsToSelector:[origInvocation selector]]) {
+    if ([self.internalObject respondsToSelector:[origInvocation selector]]) {
         __weak typeof(self) weakSelf         = self;
         NSMethodSignature   *methodSignature = [origInvocation methodSignature];
         const char          *type            = [methodSignature methodReturnType];
@@ -149,13 +149,13 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
             // write operations
             dispatch_barrier_async(self.queue, ^{
                 __strong typeof(self) strongSelf = weakSelf;
-                [origInvocation invokeWithTarget:strongSelf.dictionary];
+                [origInvocation invokeWithTarget:strongSelf.internalObject];
             });
         } else {
             // read operations
             dispatch_sync(self.queue, ^{
                 __strong typeof(self) strongSelf = weakSelf;
-                [origInvocation invokeWithTarget:strongSelf.dictionary];
+                [origInvocation invokeWithTarget:strongSelf.internalObject];
             });
         }
     }
@@ -166,7 +166,8 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
 }
 
 - (void)encodeWithCoder:(NSCoder *)coder {
-    [coder encodeObject:self.dictionary forKey:NSStringFromSelector(@selector(dictionary))];
+    [coder encodeObject:self.internalObject
+                 forKey:NSStringFromSelector(@selector(internalObject))];
 }
 
 #pragma mark - Public Methods
@@ -177,7 +178,7 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
 
     dispatch_sync(self.queue, ^{
         __strong typeof(self) strongSelf = weakSelf;
-        desc = [strongSelf.dictionary description];
+        desc = [strongSelf.internalObject description];
     });
 
     return desc;
@@ -192,7 +193,7 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
     
     dispatch_sync(self.queue, ^{
         __strong typeof(self) strongSelf = weakSelf;
-        copiedItem = [strongSelf.dictionary copy];
+        copiedItem = [strongSelf.internalObject copy];
     });
     
     return copiedItem;
@@ -206,7 +207,7 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
     
     dispatch_sync(self.queue, ^{
         __strong typeof(self) strongSelf = weakSelf;
-        copiedItem = [JKLThreadSafeMutableDictionary dictionaryWithDictionary:strongSelf.dictionary];
+        copiedItem = [JKLThreadSafeMutableDictionary dictionaryWithDictionary:strongSelf.internalObject];
     });
     
     return copiedItem;
