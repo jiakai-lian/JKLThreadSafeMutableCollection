@@ -20,23 +20,20 @@
 
 #pragma mark - Object Life Cycle
 
-+ (instancetype)array
-{
++ (instancetype)array {
     return [[self alloc] init];
 }
-+ (instancetype)arrayWithObject:(id)anObject
-{
+
++ (instancetype)arrayWithObject:(id)anObject {
     return [[self alloc] initWithObject:anObject];
 }
 
-+ (instancetype)arrayWithObjects:(const id [])objects count:(NSUInteger)cnt
-{
-    return [[self alloc] initWithObjects:objects count:cnt];
++ (instancetype)arrayWithArray:(NSArray<id> *)array {
+    return [[self alloc] initWithArray:array];
 }
 
-+ (instancetype)arrayWithArray:(NSArray<id> *)array
-{
-    return [[self alloc] initWithArray:array];
++ (instancetype)arrayWithCapacity:(NSUInteger)numItems {
+    return [[self alloc] initWithCapacity:numItems];
 }
 
 - (instancetype)init {
@@ -47,8 +44,7 @@
     return self;
 }
 
-- (instancetype)initWithObject:anObject
-{
+- (instancetype)initWithObject:anObject {
     self = [self init];
     if (self) {
         _internalObject = [NSMutableArray arrayWithObject:anObject];
@@ -56,18 +52,7 @@
     return self;
 }
 
-- (instancetype)initWithObjects:(const id [])objects count:(NSUInteger)cnt
-{
-    self = [self init];
-    if (self) {
-        _internalObject = [NSMutableArray arrayWithObjects:objects
-                                                     count:cnt];
-    }
-    return self;
-}
-
-- (instancetype)initWithCapacity:(NSUInteger)numItems
-{
+- (instancetype)initWithCapacity:(NSUInteger)numItems {
     self = [self init];
     if (self) {
         _internalObject = [NSMutableArray arrayWithCapacity:numItems];
@@ -75,8 +60,7 @@
     return self;
 }
 
-- (instancetype)initWithArray:(NSArray<id> *)array
-{
+- (instancetype)initWithArray:(NSArray<id> *)array {
     self = [self init];
     if (self) {
         _internalObject = [NSMutableArray arrayWithArray:array];
@@ -84,11 +68,12 @@
     return self;
 }
 
-- (instancetype)initWithArray:(NSArray<id> *)array copyItems:(BOOL)flag
-{
+- (instancetype)initWithArray:(NSArray<id> *)array
+                    copyItems:(BOOL)flag {
     self = [self init];
     if (self) {
-        _internalObject = [[NSMutableArray alloc] initWithArray:array copyItems:flag];
+        _internalObject = [[NSMutableArray alloc] initWithArray:array
+                                                      copyItems:flag];
     }
     return self;
 }
@@ -109,7 +94,7 @@
     dispatch_once(&onceToken, ^{
         queue = dispatch_queue_create("com.jiakai.JKLThreadSafeMutableArray", DISPATCH_QUEUE_CONCURRENT);
     });
-    
+
     return queue;
 }
 
@@ -162,46 +147,47 @@
 - (NSString *)description {
     __block NSString *desc       = nil;
     __weak typeof(self) weakSelf = self;
-    
+
     dispatch_sync(self.queue, ^{
         __strong typeof(self) strongSelf = weakSelf;
         desc = [strongSelf.internalObject description];
     });
-    
+
     return desc;
 }
 
 #pragma mark - NSCoding
+
 - (void)encodeWithCoder:(NSCoder *)coder {
     [coder encodeObject:self.internalObject
                  forKey:NSStringFromSelector(@selector(internalObject))];
 }
 
 #pragma mark - NSCopying
-- (id)copyWithZone:(nullable NSZone *)zone
-{
-    __block id copiedItem       = nil;
+
+- (id)copyWithZone:(nullable NSZone *)zone {
+    __block id copiedItem        = nil;
     __weak typeof(self) weakSelf = self;
-    
+
     dispatch_sync(self.queue, ^{
         __strong typeof(self) strongSelf = weakSelf;
         copiedItem = [strongSelf.internalObject copy];
     });
-    
+
     return copiedItem;
 }
 
 #pragma mark - NSMutableCopying
-- (id)mutableCopyWithZone:(nullable NSZone *)zone
-{
-    __block id copiedItem       = nil;
+
+- (id)mutableCopyWithZone:(nullable NSZone *)zone {
+    __block id copiedItem        = nil;
     __weak typeof(self) weakSelf = self;
-    
+
     dispatch_sync(self.queue, ^{
         __strong typeof(self) strongSelf = weakSelf;
         copiedItem = [strongSelf.internalObject mutableCopy];
     });
-    
+
     return copiedItem;
 }
 
