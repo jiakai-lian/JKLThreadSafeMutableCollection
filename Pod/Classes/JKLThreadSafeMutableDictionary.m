@@ -107,6 +107,14 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
     return self;
 }
 
+- (id)initWithCoder:(NSCoder *)coder {
+    self = [self init];
+    if (self) {
+        _dictionary = [coder decodeObjectForKey:NSStringFromSelector(@selector(dictionary))];
+    }
+    return self;
+}
+
 #pragma mark - Private Methods
 
 - (BOOL)respondsToSelector:(SEL)aSelector {
@@ -157,6 +165,10 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
     // Prevent NSInvalidArgumentException
 }
 
+- (void)encodeWithCoder:(NSCoder *)coder {
+    [coder encodeObject:self.dictionary forKey:NSStringFromSelector(@selector(dictionary))];
+}
+
 #pragma mark - Public Methods
 
 - (NSString *)description {
@@ -194,7 +206,7 @@ static char *const QUEUE_NAME = "com.jiakai.JKLThreadSafeMutableDictionary";
     
     dispatch_sync(self.queue, ^{
         __strong typeof(self) strongSelf = weakSelf;
-        copiedItem = [strongSelf.dictionary mutableCopy];
+        copiedItem = [JKLThreadSafeMutableDictionary dictionaryWithDictionary:strongSelf.dictionary];
     });
     
     return copiedItem;

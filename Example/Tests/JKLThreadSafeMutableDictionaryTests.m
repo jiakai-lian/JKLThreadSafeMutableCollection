@@ -14,7 +14,7 @@
 @property(nonatomic, copy) NSDictionary                     *sampleDictionary;
 @property(nonatomic, copy) NSArray                          *sampleValues;
 @property(nonatomic, copy) NSArray                          *sampleKeys;
-@property(nonatomic, copy) NSSortDescriptor *sort;
+@property(nonatomic, copy) NSSortDescriptor                 *sort;
 
 @end
 
@@ -23,14 +23,15 @@
 - (void)setUp {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
-    self.sort = [NSSortDescriptor sortDescriptorWithKey:@"self" ascending:YES];
+    self.sort = [NSSortDescriptor sortDescriptorWithKey:@"self"
+                                              ascending:YES];
 
     self.sampleValues     = @[@"value1", @"value2", @"valueSame", @"valueSame"];
     self.sampleKeys       = @[@"key1", @"key2", @"key3", @"key4"];
     self.sampleDictionary = [NSDictionary dictionaryWithObjects:self.sampleValues
                                                         forKeys:self.sampleKeys];
 
-    self.dic              = [JKLThreadSafeMutableDictionary dictionaryWithDictionary:self.sampleDictionary];
+    self.dic = [JKLThreadSafeMutableDictionary dictionaryWithDictionary:self.sampleDictionary];
 }
 
 - (void)tearDown {
@@ -112,15 +113,16 @@
 
 - (void)testInitWithObjectForKey {
     self.dic = [[JKLThreadSafeMutableDictionary alloc] initWithObject:self.sampleValues.firstObject
-                                                             forKey:self.sampleKeys.firstObject];
+                                                               forKey:self.sampleKeys.firstObject];
     XCTAssertNotNil(self.dic);
     XCTAssertEqual(self.dic.count, 1);
     XCTAssert([self.sampleDictionary[self.sampleKeys.firstObject] isEqualToString:self.dic[self.sampleKeys.firstObject]]);
 }
 
 - (void)testInitWithDictionaryCopyItems {
-    self.dic = [[JKLThreadSafeMutableDictionary alloc] initWithDictionary:self.sampleDictionary copyItems:YES];
-    
+    self.dic = [[JKLThreadSafeMutableDictionary alloc] initWithDictionary:self.sampleDictionary
+                                                                copyItems:YES];
+
     XCTAssertNotNil(self.dic);
     XCTAssertEqual(self.dic.count, self.sampleDictionary.count);
     for (id <NSCopying> key in self.sampleDictionary.allKeys) {
@@ -188,7 +190,7 @@
 }
 
 - (void)testAllKeys {
-    NSArray * allKeys = [self.dic allKeys];
+    NSArray             *allKeys = [self.dic allKeys];
 
     XCTAssertEqual(allKeys.count, self.dic.count);
     XCTAssertEqual(allKeys.count, self.sampleKeys.count);
@@ -198,8 +200,8 @@
 }
 
 - (void)testAllKeysForObject {
-    NSArray * allKeys = [self.dic allKeysForObject:self.sampleValues.lastObject];
-    NSArray * sampleAllKeys = [self.sampleDictionary allKeysForObject:self.sampleValues.lastObject];
+    NSArray             *allKeys       = [self.dic allKeysForObject:self.sampleValues.lastObject];
+    NSArray             *sampleAllKeys = [self.sampleDictionary allKeysForObject:self.sampleValues.lastObject];
 
     XCTAssertEqual(allKeys.count, sampleAllKeys.count);
     for (id <NSCopying> key in allKeys) {
@@ -208,11 +210,11 @@
 }
 
 - (void)testAllValues {
-    NSArray * allValues = [[self.dic allValues] sortedArrayUsingDescriptors:@[self.sort]];
+    NSArray  *allValues = [[self.dic allValues] sortedArrayUsingDescriptors:@[self.sort]];
 
     XCTAssertEqual(allValues.count, self.sampleValues.count);
     XCTAssertEqual(allValues.count, self.dic.count);
-    for (int i = 0; i < allValues.count; ++i) {
+    for (int i          = 0; i < allValues.count; ++i) {
         XCTAssert([self.sampleValues[i] isEqualToString:allValues[i]]);
     }
 }
@@ -228,16 +230,18 @@
 }
 
 - (void)testDescriptionWithLocale {
-    NSString * desc =  [self.dic descriptionWithLocale:[NSLocale systemLocale]];
+    NSString *desc = [self.dic descriptionWithLocale:[NSLocale systemLocale]];
     XCTAssertNotNil(desc);
     XCTAssert([[self.sampleDictionary descriptionWithLocale:[NSLocale systemLocale]] isEqualToString:desc]);
 }
 
 - (void)testDescriptionWithLocaleIndent {
     static NSUInteger level = 1;
-    NSString * desc =  [self.dic descriptionWithLocale:[NSLocale systemLocale] indent:level];
+    NSString          *desc = [self.dic descriptionWithLocale:[NSLocale systemLocale]
+                                                       indent:level];
     XCTAssertNotNil(desc);
-    XCTAssert([[self.sampleDictionary descriptionWithLocale:[NSLocale systemLocale] indent:level] isEqualToString:desc]);
+    XCTAssert([[self.sampleDictionary descriptionWithLocale:[NSLocale systemLocale]
+                                                     indent:level] isEqualToString:desc]);
 }
 
 - (void)testIsEqualToDictionary {
@@ -246,13 +250,11 @@
 
 - (void)testObjectEnumerator {
     NSEnumerator *enumerator = [self.dic objectEnumerator];
-    id           value         = nil;
+    id           value       = nil;
     while ((value = [enumerator nextObject]) != nil) {
-        BOOL isFound = NO;
-        for(id sampleValue in [self.sampleDictionary allValues])
-        {
-            if([sampleValue isEqualToString:value])
-            {
+        BOOL    isFound = NO;
+        for (id sampleValue in [self.sampleDictionary allValues]) {
+            if ([sampleValue isEqualToString:value]) {
                 isFound = YES;
             }
         }
@@ -271,7 +273,6 @@
 
             self.dic = [JKLThreadSafeMutableDictionary dictionary];
 
-
             dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
 
             dispatch_apply(DISPATCH_QUEUE_COUNT, queue, ^(size_t i) {
@@ -288,16 +289,27 @@
     }
 }
 
+- (void)testCopy {
+    NSDictionary *dic = [self.dic copy];
 
-//TODO: More test cases
+    XCTAssert([dic isKindOfClass:[NSDictionary class]]);
+    XCTAssert([dic isEqualToDictionary:self.sampleDictionary]);
+}
 
-//TODO: normal creation, each method, encode/decode, fromJSON/toJSON, subscript, enumeration, copy/mutablecopy, multithreading
+- (void)testMutableCopy {
+    JKLThreadSafeMutableDictionary *dic = [self.dic mutableCopy];
 
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
+    XCTAssert([dic isKindOfClass:[JKLThreadSafeMutableDictionary class]]);
+    XCTAssert([dic isEqualToDictionary:self.sampleDictionary]);
+}
+
+- (void)testArchiveUnarchive {
+    NSData * data = [NSKeyedArchiver archivedDataWithRootObject:self.dic];
+    JKLThreadSafeMutableDictionary * unarchivedDic = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+
+    XCTAssert([unarchivedDic isKindOfClass:[JKLThreadSafeMutableDictionary class]]);
+    XCTAssert([unarchivedDic isEqualToDictionary:[self.dic copy]]);
+
 }
 
 @end
