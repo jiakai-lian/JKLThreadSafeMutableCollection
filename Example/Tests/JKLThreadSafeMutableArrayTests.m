@@ -85,4 +85,64 @@
     }
 }
 
+- (void)testDescription {
+    XCTAssertNotNil([self.array description]);
+    XCTAssert([[self.array description] isEqualToString:[self.sampleArray description]]);
+}
+
+- (void)testMultiThreading {
+
+    static const NSUInteger DISPATCH_QUEUE_COUNT = 1000;
+    static const NSUInteger ITERATION_COUNT      = 100;
+    __weak typeof(self) weakSelf                 = self;
+
+    for (NSUInteger i = 0; i < ITERATION_COUNT; i++) {
+        @autoreleasepool {
+
+            self.array = [JKLThreadSafeMutableArray array];
+
+            dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+
+            dispatch_apply(DISPATCH_QUEUE_COUNT, queue, ^(size_t i) {
+                __strong typeof(self) strongSelf = weakSelf;
+
+                [strongSelf.array addObject:@(i)];
+                NSUInteger n = strongSelf.array.count;
+                n++;
+            });
+        }
+
+        XCTAssertEqual(DISPATCH_QUEUE_COUNT, self.array.count);
+    }
+}
+
+- (void)testCopy {
+    NSDictionary *dic = [self.array copy];
+
+    XCTAssert([dic isKindOfClass:[NSArray class]]);
+
+    for (int i = 0; i < self.array.count; ++i) {
+        XCTAssert([self.array[i] isEqualToString:self.sampleArray[i]]);
+    }
+}
+
+- (void)testMutableCopy {
+    JKLThreadSafeMutableArray *dic = [self.array mutableCopy];
+
+    XCTAssert([dic isKindOfClass:[NSMutableArray class]]);
+    for (int i = 0; i < self.array.count; ++i) {
+        XCTAssert([self.array[i] isEqualToString:self.sampleArray[i]]);
+    }
+}
+
+- (void)testArchiveUnarchive {
+    NSData                         *data          = [NSKeyedArchiver archivedDataWithRootObject:self.array];
+    JKLThreadSafeMutableArray *unarchivedDic = [NSKeyedUnarchiver unarchiveObjectWithData:data];
+
+    XCTAssert([unarchivedDic isKindOfClass:[JKLThreadSafeMutableArray class]]);
+    for (int i = 0; i < self.array.count; ++i) {
+        XCTAssert([self.array[i] isEqualToString:self.sampleArray[i]]);
+    }
+}
+
 @end
