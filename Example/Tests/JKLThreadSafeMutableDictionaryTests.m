@@ -299,7 +299,7 @@
 - (void)testMutableCopy {
     JKLThreadSafeMutableDictionary *dic = [self.dic mutableCopy];
 
-    XCTAssert([dic isKindOfClass:[JKLThreadSafeMutableDictionary class]]);
+    XCTAssert([dic isKindOfClass:[NSMutableDictionary class]]);
     XCTAssert([dic isEqualToDictionary:self.sampleDictionary]);
 }
 

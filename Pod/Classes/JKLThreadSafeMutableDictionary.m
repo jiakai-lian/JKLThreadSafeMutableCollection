@@ -215,7 +215,7 @@
 
     dispatch_sync(self.queue, ^{
         __strong typeof(self) strongSelf = weakSelf;
-        copiedItem = [JKLThreadSafeMutableDictionary dictionaryWithDictionary:strongSelf.internalObject];
+        copiedItem = [strongSelf.internalObject mutableCopy];
     });
 
     return copiedItem;
