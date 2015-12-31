@@ -22,6 +22,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		85DB8A1F1C32B88A00730D9D /* JKLThreadSafeMutableArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DB8A1E1C32B88A00730D9D /* JKLThreadSafeMutableArrayTests.m */; };
+		85DB8A251C3574F500730D9D /* JKLThreadSafeMutableSetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85DB8A241C3574F500730D9D /* JKLThreadSafeMutableSetTests.m */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		D107318AAA5D63CD4718D092 /* Pods_JKLThreadSafeMutableCollection_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92EF5E57571AE1DC4515E62A /* Pods_JKLThreadSafeMutableCollection_Example.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		85DB8A1E1C32B88A00730D9D /* JKLThreadSafeMutableArrayTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLThreadSafeMutableArrayTests.m; sourceTree = "<group>"; };
+		85DB8A241C3574F500730D9D /* JKLThreadSafeMutableSetTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLThreadSafeMutableSetTests.m; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		8B972A89C067135795AC8ACE /* Pods_JKLThreadSafeMutableCollection_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKLThreadSafeMutableCollection_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		92EF5E57571AE1DC4515E62A /* Pods_JKLThreadSafeMutableCollection_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKLThreadSafeMutableCollection_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -161,6 +163,7 @@
 				6003F5B6195388D20070C39A /* Supporting Files */,
 				3EF28AFC1C3159D800E0A10B /* JKLThreadSafeMutableDictionaryTests.m */,
 				85DB8A1E1C32B88A00730D9D /* JKLThreadSafeMutableArrayTests.m */,
+				85DB8A241C3574F500730D9D /* JKLThreadSafeMutableSetTests.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85DB8A251C3574F500730D9D /* JKLThreadSafeMutableSetTests.m in Sources */,
 				85DB8A1F1C32B88A00730D9D /* JKLThreadSafeMutableArrayTests.m in Sources */,
 				3EF28AFD1C3159D800E0A10B /* JKLThreadSafeMutableDictionaryTests.m in Sources */,
 			);

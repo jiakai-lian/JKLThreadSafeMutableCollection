@@ -9,49 +9,50 @@
 /* Begin PBXBuildFile section */
 		10E89B844DDAED1513F5AF4B30B1B3B3 /* Pods-JKLThreadSafeMutableCollection_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE36B68156D76FD6F70C7BCE0EF37173 /* Pods-JKLThreadSafeMutableCollection_Tests-dummy.m */; };
 		2083D67AA5C3832F6CF078D9AC95D094 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		2118A524BC9BE020DBD195D756F98A97 /* JKLThreadSafeMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A36F794A43DE176BEA91E8601E7A5A1 /* JKLThreadSafeMutableDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50491EB4BDCF63ACD3E151A3A0539802 /* JKLThreadSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FD1F1C0A7925AFC96562FC2EC102B29C /* JKLThreadSafeMutableArray.m */; };
+		27ECDF7709F605D17770CC5709CE3FCD /* JKLThreadSafeMutableDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = F260116C25507FD25CF5D32CF3195494 /* JKLThreadSafeMutableDictionary.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33FCA1BD1C01EB3247E565B0050BE40B /* JKLThreadSafeMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F0FA59B5E066B3FDCE76F8ED50A7F9 /* JKLThreadSafeMutableArray.m */; };
 		759A95623C3402B2101378FAAE721611 /* Pods-JKLThreadSafeMutableCollection_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4627FBA3DA9532E191ADE2979C28605F /* Pods-JKLThreadSafeMutableCollection_Example-dummy.m */; };
-		7783558C63BBD2AB5A0F84F0FA244C9E /* JKLThreadSafeMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D9DBFC5620B670C49FF4E0D99CAEA51 /* JKLThreadSafeMutableArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7FD7F9CB1B953375556A5E1A357B69B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		95273A64F597F119A3E24CD201062017 /* JKLThreadSafeMutableCollection.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 78A1C49B0FF110E5C0A49C3F3E5CA0A7 /* JKLThreadSafeMutableCollection.bundle */; };
-		9734A4AD7C12B5EB905C48494D475D8B /* JKLThreadSafeMutableCollection-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 682EE82878B46179DFF452ABAFE6CD4D /* JKLThreadSafeMutableCollection-dummy.m */; };
+		78C9055C4BC8CCD47AF26A3FA2D60D05 /* JKLThreadSafeMutableCollection-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCFFEEAC42C1BF52AAD23BFDA31D4B2D /* JKLThreadSafeMutableCollection-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C9C55B072B6369684CB158D56A46755 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		7E2759A52A3DBDE420C6546B13FAE8AC /* JKLThreadSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = A5AF948EE5FCCF499207C2693CCB37E9 /* JKLThreadSafeMutableDictionary.m */; };
+		8ADEA28AE7EFEDCAB4C9363C3C2A9ECF /* JKLThreadSafeMutableCollection-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 682EE82878B46179DFF452ABAFE6CD4D /* JKLThreadSafeMutableCollection-dummy.m */; };
 		9C11D2CF34CF7A8BCC08D0CE316416EE /* Pods-JKLThreadSafeMutableCollection_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D1A9149744377B372EA020BD1AC0B707 /* Pods-JKLThreadSafeMutableCollection_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1FC636172B7DF40A71F7C2D101B65E2 /* JKLThreadSafeMutableSet.m in Sources */ = {isa = PBXBuildFile; fileRef = AF6D4F3957BD1A97326BAE1DD6FB51D3 /* JKLThreadSafeMutableSet.m */; };
+		ABA589526460750F17F72BF5A8DFDF49 /* JKLThreadSafeMutableSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 225C858AF9E22BF40900A1DA9B92A78D /* JKLThreadSafeMutableSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AF11EC5E5FA3FCA168885586CEBAF428 /* JKLThreadSafeMutableCollection.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 78A1C49B0FF110E5C0A49C3F3E5CA0A7 /* JKLThreadSafeMutableCollection.bundle */; };
 		BCC8564BDF890D1CA2AA9B2D16F4290A /* Pods-JKLThreadSafeMutableCollection_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AFE532F4AD4DEDA5170CE8AF96A2A1EC /* Pods-JKLThreadSafeMutableCollection_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E2FC74BEC8B769390D791B0B5E4402BC /* JKLThreadSafeMutableCollection-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CCFFEEAC42C1BF52AAD23BFDA31D4B2D /* JKLThreadSafeMutableCollection-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8C779D6E4E53A064108E291E9BFA24C /* JKLThreadSafeMutableDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = DA132172C4D36E2D9377C954661CC126 /* JKLThreadSafeMutableDictionary.m */; };
+		E441821151AE2841EAA7FAE080CC3DD4 /* JKLThreadSafeMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = A1B9E40B6662244E0A2905F607D951C9 /* JKLThreadSafeMutableArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ED94ACC82F725AA46982AC825A01CE3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1D663CABE2E31DE71553DABB99C2B298 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 1EC1A8BC9D2AEC94F845788161591477;
-			remoteInfo = "JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection";
-		};
 		A0A69FDAAF76BCDB5B5A3A57E9C6DCCA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7A393CCD101E3B24BB5E8543E43351AC;
+			remoteGlobalIDString = F212FA7781442B3BFC03C1E7756E356C;
 			remoteInfo = JKLThreadSafeMutableCollection;
 		};
 		C61518A5CD2C41982D0D242E2C3BF3F0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7A393CCD101E3B24BB5E8543E43351AC;
+			remoteGlobalIDString = F212FA7781442B3BFC03C1E7756E356C;
 			remoteInfo = JKLThreadSafeMutableCollection;
+		};
+		F4F20314A0CE9BF0178F9AC22394B4B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D30316F76C7DF1E32F99B130B083BC24;
+			remoteInfo = "JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A36F794A43DE176BEA91E8601E7A5A1 /* JKLThreadSafeMutableDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKLThreadSafeMutableDictionary.h; sourceTree = "<group>"; };
 		1A7D0E6F74489B1B9A4D336A4B621218 /* Pods-JKLThreadSafeMutableCollection_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKLThreadSafeMutableCollection_Tests-resources.sh"; sourceTree = "<group>"; };
+		225C858AF9E22BF40900A1DA9B92A78D /* JKLThreadSafeMutableSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKLThreadSafeMutableSet.h; sourceTree = "<group>"; };
 		24C9FC52ACAB4DD61875AAC1B2515C01 /* Pods-JKLThreadSafeMutableCollection_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKLThreadSafeMutableCollection_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2D9DBFC5620B670C49FF4E0D99CAEA51 /* JKLThreadSafeMutableArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKLThreadSafeMutableArray.h; sourceTree = "<group>"; };
 		33F21FC0E5C6FCFA6E7AD447C0667C29 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3E3B6C32EC2B97971A77ADF1342521DD /* JKLThreadSafeMutableCollection-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKLThreadSafeMutableCollection-prefix.pch"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -66,10 +67,13 @@
 		8AA2A04FC998BB910A7687C5DDA291F3 /* Pods-JKLThreadSafeMutableCollection_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKLThreadSafeMutableCollection_Example-resources.sh"; sourceTree = "<group>"; };
 		962F9F6EA3D08FB0D622876CFDFEEC5D /* JKLThreadSafeMutableCollection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKLThreadSafeMutableCollection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B0E6F37C15D2EC2A5CB73698F598643 /* JKLThreadSafeMutableCollection.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKLThreadSafeMutableCollection.xcconfig; sourceTree = "<group>"; };
+		A1B9E40B6662244E0A2905F607D951C9 /* JKLThreadSafeMutableArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKLThreadSafeMutableArray.h; sourceTree = "<group>"; };
+		A5AF948EE5FCCF499207C2693CCB37E9 /* JKLThreadSafeMutableDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JKLThreadSafeMutableDictionary.m; sourceTree = "<group>"; };
 		A7BBC5F50F8695C0EC30DE990DE6546C /* Pods-JKLThreadSafeMutableCollection_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKLThreadSafeMutableCollection_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AA0EF8EBE5440B4693C4DE2E02C62098 /* Pods-JKLThreadSafeMutableCollection_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKLThreadSafeMutableCollection_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AE9C7963318B2E4521CC6E473A1365AF /* JKLThreadSafeMutableCollection.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = JKLThreadSafeMutableCollection.modulemap; sourceTree = "<group>"; };
 		AEB4C004BB9E7FFD2B2C4AF1FF20C6CD /* Pods_JKLThreadSafeMutableCollection_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKLThreadSafeMutableCollection_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF6D4F3957BD1A97326BAE1DD6FB51D3 /* JKLThreadSafeMutableSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JKLThreadSafeMutableSet.m; sourceTree = "<group>"; };
 		AFE532F4AD4DEDA5170CE8AF96A2A1EC /* Pods-JKLThreadSafeMutableCollection_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKLThreadSafeMutableCollection_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B6588DB62F6DBE546DEE1EE1FB085153 /* Pods-JKLThreadSafeMutableCollection_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKLThreadSafeMutableCollection_Example-frameworks.sh"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -78,12 +82,12 @@
 		CCFFEEAC42C1BF52AAD23BFDA31D4B2D /* JKLThreadSafeMutableCollection-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKLThreadSafeMutableCollection-umbrella.h"; sourceTree = "<group>"; };
 		D1A9149744377B372EA020BD1AC0B707 /* Pods-JKLThreadSafeMutableCollection_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKLThreadSafeMutableCollection_Example-umbrella.h"; sourceTree = "<group>"; };
 		D7F6764D32ED91C6125A8959998B7A6D /* Pods-JKLThreadSafeMutableCollection_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKLThreadSafeMutableCollection_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		DA132172C4D36E2D9377C954661CC126 /* JKLThreadSafeMutableDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JKLThreadSafeMutableDictionary.m; sourceTree = "<group>"; };
 		EAFE791F055285718A122A5463E368DB /* Pods-JKLThreadSafeMutableCollection_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKLThreadSafeMutableCollection_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		EE631B8F2936912198B1DEA1CD1F2CE7 /* Pods-JKLThreadSafeMutableCollection_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKLThreadSafeMutableCollection_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		EEFDB24D07CA58058C4911E8C5149EFE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF8F59B92C8C2A3E55F4DB35210C4B7F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FD1F1C0A7925AFC96562FC2EC102B29C /* JKLThreadSafeMutableArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JKLThreadSafeMutableArray.m; sourceTree = "<group>"; };
+		F260116C25507FD25CF5D32CF3195494 /* JKLThreadSafeMutableDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKLThreadSafeMutableDictionary.h; sourceTree = "<group>"; };
+		F3F0FA59B5E066B3FDCE76F8ED50A7F9 /* JKLThreadSafeMutableArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JKLThreadSafeMutableArray.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +99,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4C306F7335EF9C0D61524E774210B2D6 /* Frameworks */ = {
+		581F60640E176704447620A9712FC791 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FD7F9CB1B953375556A5E1A357B69B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC243DCF27C0DFA5B0C10E48641CC51F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C9C55B072B6369684CB158D56A46755 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,13 +119,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED94ACC82F725AA46982AC825A01CE3C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		EDD124FF133A97C5C55766853D8DAA7F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,10 +136,10 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		498F6EA18737EA34E0D82CD682D6321D /* Pod */ = {
+		52118E6715D522F569BD33ED752B9B94 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				A7314CE5391BCFD586EADA21EBCF7F95 /* Classes */,
+				F4A26559DF2045B1335C565ED19CF22C /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -195,17 +199,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		A7314CE5391BCFD586EADA21EBCF7F95 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				2D9DBFC5620B670C49FF4E0D99CAEA51 /* JKLThreadSafeMutableArray.h */,
-				FD1F1C0A7925AFC96562FC2EC102B29C /* JKLThreadSafeMutableArray.m */,
-				1A36F794A43DE176BEA91E8601E7A5A1 /* JKLThreadSafeMutableDictionary.h */,
-				DA132172C4D36E2D9377C954661CC126 /* JKLThreadSafeMutableDictionary.m */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,7 +224,7 @@
 		BF38F8CDE2A22A043D3D31D4756AAB84 /* JKLThreadSafeMutableCollection */ = {
 			isa = PBXGroup;
 			children = (
-				498F6EA18737EA34E0D82CD682D6321D /* Pod */,
+				52118E6715D522F569BD33ED752B9B94 /* Pod */,
 				BE7F5A64396C10B4F5F6EB251745409C /* Support Files */,
 			);
 			name = JKLThreadSafeMutableCollection;
@@ -255,16 +248,30 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		F4A26559DF2045B1335C565ED19CF22C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A1B9E40B6662244E0A2905F607D951C9 /* JKLThreadSafeMutableArray.h */,
+				F3F0FA59B5E066B3FDCE76F8ED50A7F9 /* JKLThreadSafeMutableArray.m */,
+				F260116C25507FD25CF5D32CF3195494 /* JKLThreadSafeMutableDictionary.h */,
+				A5AF948EE5FCCF499207C2693CCB37E9 /* JKLThreadSafeMutableDictionary.m */,
+				225C858AF9E22BF40900A1DA9B92A78D /* JKLThreadSafeMutableSet.h */,
+				AF6D4F3957BD1A97326BAE1DD6FB51D3 /* JKLThreadSafeMutableSet.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		41134724C04DA16B25E0FC2CE2F5B6BB /* Headers */ = {
+		6E7A22492CDC5E086CBEE932B959F4FE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7783558C63BBD2AB5A0F84F0FA244C9E /* JKLThreadSafeMutableArray.h in Headers */,
-				E2FC74BEC8B769390D791B0B5E4402BC /* JKLThreadSafeMutableCollection-umbrella.h in Headers */,
-				2118A524BC9BE020DBD195D756F98A97 /* JKLThreadSafeMutableDictionary.h in Headers */,
+				E441821151AE2841EAA7FAE080CC3DD4 /* JKLThreadSafeMutableArray.h in Headers */,
+				78C9055C4BC8CCD47AF26A3FA2D60D05 /* JKLThreadSafeMutableCollection-umbrella.h in Headers */,
+				27ECDF7709F605D17770CC5709CE3FCD /* JKLThreadSafeMutableDictionary.h in Headers */,
+				ABA589526460750F17F72BF5A8DFDF49 /* JKLThreadSafeMutableSet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,23 +294,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1EC1A8BC9D2AEC94F845788161591477 /* JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 14DBE61B0F3B0375126AE8DB3F9E5642 /* Build configuration list for PBXNativeTarget "JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection" */;
-			buildPhases = (
-				19A03D61324CB4E9124FE862ABDD5D6E /* Sources */,
-				EDD124FF133A97C5C55766853D8DAA7F /* Frameworks */,
-				5AADDFC7427E4BFB6DEF8B4EABB6259A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection";
-			productName = "JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection";
-			productReference = 78A1C49B0FF110E5C0A49C3F3E5CA0A7 /* JKLThreadSafeMutableCollection.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		33D2D7F2EFC95891B50654CE3BF18000 /* Pods-JKLThreadSafeMutableCollection_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CC292F7A239DF616FF20C2C1081AC14F /* Build configuration list for PBXNativeTarget "Pods-JKLThreadSafeMutableCollection_Tests" */;
@@ -340,19 +330,36 @@
 			productReference = AEB4C004BB9E7FFD2B2C4AF1FF20C6CD /* Pods_JKLThreadSafeMutableCollection_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		7A393CCD101E3B24BB5E8543E43351AC /* JKLThreadSafeMutableCollection */ = {
+		D30316F76C7DF1E32F99B130B083BC24 /* JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A85B95D4C1A095789CA7243202105AE4 /* Build configuration list for PBXNativeTarget "JKLThreadSafeMutableCollection" */;
+			buildConfigurationList = 68838E1EBE1CFE3F5E729D409C610038 /* Build configuration list for PBXNativeTarget "JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection" */;
 			buildPhases = (
-				502CEC7E0FC214EFFF4F5A397878382A /* Sources */,
-				4C306F7335EF9C0D61524E774210B2D6 /* Frameworks */,
-				5CCF3141CC04E72DED605B5D76133829 /* Resources */,
-				41134724C04DA16B25E0FC2CE2F5B6BB /* Headers */,
+				AC0D76E5B28114F1EF8CD5FC1A8DA50C /* Sources */,
+				581F60640E176704447620A9712FC791 /* Frameworks */,
+				89AE0E51FA31363AD335161A18FFC6ED /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				84063A95EC86141D1551572293420516 /* PBXTargetDependency */,
+			);
+			name = "JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection";
+			productName = "JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection";
+			productReference = 78A1C49B0FF110E5C0A49C3F3E5CA0A7 /* JKLThreadSafeMutableCollection.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		F212FA7781442B3BFC03C1E7756E356C /* JKLThreadSafeMutableCollection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A98982CD35A5201027C15256494B0E98 /* Build configuration list for PBXNativeTarget "JKLThreadSafeMutableCollection" */;
+			buildPhases = (
+				D10476B92AFCA134C4C72642E531B70B /* Sources */,
+				AC243DCF27C0DFA5B0C10E48641CC51F /* Frameworks */,
+				FD7CC0A6CA38698CA338F7E3E8DD785F /* Resources */,
+				6E7A22492CDC5E086CBEE932B959F4FE /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BD8866375C1AE60FF61017B71D1674B2 /* PBXTargetDependency */,
 			);
 			name = JKLThreadSafeMutableCollection;
 			productName = JKLThreadSafeMutableCollection;
@@ -380,8 +387,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7A393CCD101E3B24BB5E8543E43351AC /* JKLThreadSafeMutableCollection */,
-				1EC1A8BC9D2AEC94F845788161591477 /* JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection */,
+				F212FA7781442B3BFC03C1E7756E356C /* JKLThreadSafeMutableCollection */,
+				D30316F76C7DF1E32F99B130B083BC24 /* JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection */,
 				73E7C8BEF15ECDC49B4BA868FCE7D09D /* Pods-JKLThreadSafeMutableCollection_Example */,
 				33D2D7F2EFC95891B50654CE3BF18000 /* Pods-JKLThreadSafeMutableCollection_Tests */,
 			);
@@ -389,31 +396,24 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5AADDFC7427E4BFB6DEF8B4EABB6259A /* Resources */ = {
+		89AE0E51FA31363AD335161A18FFC6ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5CCF3141CC04E72DED605B5D76133829 /* Resources */ = {
+		FD7CC0A6CA38698CA338F7E3E8DD785F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95273A64F597F119A3E24CD201062017 /* JKLThreadSafeMutableCollection.bundle in Resources */,
+				AF11EC5E5FA3FCA168885586CEBAF428 /* JKLThreadSafeMutableCollection.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		19A03D61324CB4E9124FE862ABDD5D6E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		4ED40B199065042251251128C62E4B01 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -422,13 +422,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		502CEC7E0FC214EFFF4F5A397878382A /* Sources */ = {
+		AC0D76E5B28114F1EF8CD5FC1A8DA50C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50491EB4BDCF63ACD3E151A3A0539802 /* JKLThreadSafeMutableArray.m in Sources */,
-				9734A4AD7C12B5EB905C48494D475D8B /* JKLThreadSafeMutableCollection-dummy.m in Sources */,
-				E8C779D6E4E53A064108E291E9BFA24C /* JKLThreadSafeMutableDictionary.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D10476B92AFCA134C4C72642E531B70B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33FCA1BD1C01EB3247E565B0050BE40B /* JKLThreadSafeMutableArray.m in Sources */,
+				8ADEA28AE7EFEDCAB4C9363C3C2A9ECF /* JKLThreadSafeMutableCollection-dummy.m in Sources */,
+				7E2759A52A3DBDE420C6546B13FAE8AC /* JKLThreadSafeMutableDictionary.m in Sources */,
+				A1FC636172B7DF40A71F7C2D101B65E2 /* JKLThreadSafeMutableSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,19 +454,19 @@
 		137533500DD7CA85CFD47D9B31F319DE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JKLThreadSafeMutableCollection;
-			target = 7A393CCD101E3B24BB5E8543E43351AC /* JKLThreadSafeMutableCollection */;
+			target = F212FA7781442B3BFC03C1E7756E356C /* JKLThreadSafeMutableCollection */;
 			targetProxy = A0A69FDAAF76BCDB5B5A3A57E9C6DCCA /* PBXContainerItemProxy */;
 		};
-		84063A95EC86141D1551572293420516 /* PBXTargetDependency */ = {
+		BD8866375C1AE60FF61017B71D1674B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection";
-			target = 1EC1A8BC9D2AEC94F845788161591477 /* JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection */;
-			targetProxy = 1D663CABE2E31DE71553DABB99C2B298 /* PBXContainerItemProxy */;
+			target = D30316F76C7DF1E32F99B130B083BC24 /* JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection */;
+			targetProxy = F4F20314A0CE9BF0178F9AC22394B4B5 /* PBXContainerItemProxy */;
 		};
 		F724FC7C94A7C2CE51C0D36ECC034BFA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JKLThreadSafeMutableCollection;
-			target = 7A393CCD101E3B24BB5E8543E43351AC /* JKLThreadSafeMutableCollection */;
+			target = F212FA7781442B3BFC03C1E7756E356C /* JKLThreadSafeMutableCollection */;
 			targetProxy = C61518A5CD2C41982D0D242E2C3BF3F0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -597,19 +605,7 @@
 			};
 			name = Release;
 		};
-		2AAE2440C126AD1E46FA8A7025BC82AD /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B0E6F37C15D2EC2A5CB73698F598643 /* JKLThreadSafeMutableCollection.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = JKLThreadSafeMutableCollection;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		3B30A09D8949DFEE6A38CE4C59D247B2 /* Release */ = {
+		30C981779264D7EED7218F3C76064B57 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9B0E6F37C15D2EC2A5CB73698F598643 /* JKLThreadSafeMutableCollection.xcconfig */;
 			buildSettings = {
@@ -681,7 +677,7 @@
 			};
 			name = Debug;
 		};
-		4DBFDE99B056BBD277351BEB2A0A9E1D /* Release */ = {
+		598439622A2C011CC8AB7EA0913FCF7D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9B0E6F37C15D2EC2A5CB73698F598643 /* JKLThreadSafeMutableCollection.xcconfig */;
 			buildSettings = {
@@ -708,7 +704,19 @@
 			};
 			name = Release;
 		};
-		F902B1890ADA91AEBAFC9F6C22CD561F /* Debug */ = {
+		8D1C8753EE78D9835CE095A270CCB110 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B0E6F37C15D2EC2A5CB73698F598643 /* JKLThreadSafeMutableCollection.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = JKLThreadSafeMutableCollection;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		BA7428242463C42A5D7E768D92AE5998 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9B0E6F37C15D2EC2A5CB73698F598643 /* JKLThreadSafeMutableCollection.xcconfig */;
 			buildSettings = {
@@ -738,15 +746,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		14DBE61B0F3B0375126AE8DB3F9E5642 /* Build configuration list for PBXNativeTarget "JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2AAE2440C126AD1E46FA8A7025BC82AD /* Debug */,
-				3B30A09D8949DFEE6A38CE4C59D247B2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -765,11 +764,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A85B95D4C1A095789CA7243202105AE4 /* Build configuration list for PBXNativeTarget "JKLThreadSafeMutableCollection" */ = {
+		68838E1EBE1CFE3F5E729D409C610038 /* Build configuration list for PBXNativeTarget "JKLThreadSafeMutableCollection-JKLThreadSafeMutableCollection" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F902B1890ADA91AEBAFC9F6C22CD561F /* Debug */,
-				4DBFDE99B056BBD277351BEB2A0A9E1D /* Release */,
+				8D1C8753EE78D9835CE095A270CCB110 /* Debug */,
+				30C981779264D7EED7218F3C76064B57 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A98982CD35A5201027C15256494B0E98 /* Build configuration list for PBXNativeTarget "JKLThreadSafeMutableCollection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA7428242463C42A5D7E768D92AE5998 /* Debug */,
+				598439622A2C011CC8AB7EA0913FCF7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
