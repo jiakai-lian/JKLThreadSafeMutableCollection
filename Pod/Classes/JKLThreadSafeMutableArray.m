@@ -77,14 +77,6 @@
     }
     return self;
 }
-
-- (id)initWithCoder:(NSCoder *)coder {
-    self = [self init];
-    if (self) {
-        super.internalObject = [coder decodeObjectForKey:NSStringFromSelector(@selector(internalObject))];
-    }
-    return self;
-}
 @end
 
 #pragma clang diagnostic pop
