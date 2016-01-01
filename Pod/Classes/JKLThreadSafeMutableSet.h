@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JKLThreadSafeMutableCollection.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JKLThreadSafeMutableSet : NSObject <NSCopying, NSMutableCopying, NSCoding>
+@interface JKLThreadSafeMutableSet : JKLThreadSafeMutableCollection
 
 - (NSUInteger)count;
 - (nullable id)member:(id)object;
@@ -19,7 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 - (instancetype)init NS_DESIGNATED_INITIALIZER;
 - (instancetype)initWithObjects:(const id[])objects
                           count:(NSUInteger)cnt;
-- (nullable instancetype)initWithCoder:(NSCoder *)aDecoder;
 - (instancetype)initWithCapacity:(NSUInteger)numItems;
 
 - (void)addObject:(id)object;
