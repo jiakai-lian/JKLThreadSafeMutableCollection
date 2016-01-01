@@ -13,11 +13,11 @@
             buildForProfiling = "YES"
             buildForArchiving = "YES">
             <BuildableReference
-               BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '65DB0C0D6AD475A092F717BD'
-               BlueprintName = 'JKLThreadSafeMutableCollection'
-               ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'JKLThreadSafeMutableCollection.framework'>
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7A393CCD101E3B24BB5E8543E43351AC"
+               BlueprintName = "JKLThreadSafeMutableCollection"
+               ReferencedContainer = "container:Pods.xcodeproj"
+               BuildableName = "JKLThreadSafeMutableCollection.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
