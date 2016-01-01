@@ -127,7 +127,7 @@
 }
 
 - (void)testMutableCopy {
-    JKLThreadSafeMutableArray *dic = [self.array mutableCopy];
+    NSMutableArray *dic = [self.array mutableCopy];
 
     XCTAssert([dic isKindOfClass:[NSMutableArray class]]);
     for (int i = 0; i < self.array.count; ++i) {
