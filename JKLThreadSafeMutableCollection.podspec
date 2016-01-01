@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = "JKLThreadSafeMutableCollection"
   s.version          = "0.1.0"
-  s.summary          = "A short description of JKLThreadSafeMutableCollection."
+  s.summary          = "A set of thread safe mutable collection classes includes dictionary, array and set."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,13 +17,15 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+                        As Apple documented, NSDictionary, NSArray and NSSet are thread-safe, but not all the corresponding mutable classes.  JKLThreadSafeMutableCollection is developed to replace all those mutable classes by a lightweight solution.
+This collection inlcudes **JKLThreadSafeMutableDictionary**, **JKLThreadSafeMutableArray** and **JKLThreadSafeMutableSet**.  All these classses support most of original NSMutable methods, include subscript feature(Ex. dictionary[key], array[index]).
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/JKLThreadSafeMutableCollection"
+  s.homepage         = "https://github.com/jiakai-lian/JKLThreadSafeMutableCollection"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "jiakai lian" => "jiakai.lian@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/JKLThreadSafeMutableCollection.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/jiakai-lian/JKLThreadSafeMutableCollection.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
