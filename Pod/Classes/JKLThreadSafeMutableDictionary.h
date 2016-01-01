@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "JKLThreadSafeMutableCollection.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface JKLThreadSafeMutableDictionary: NSObject <NSCopying, NSMutableCopying, NSCoding>
+@interface JKLThreadSafeMutableDictionary: JKLThreadSafeMutableCollection
 
 - (NSUInteger)count;
 - (nullable id)objectForKey:(id<NSCopying>)aKey;
