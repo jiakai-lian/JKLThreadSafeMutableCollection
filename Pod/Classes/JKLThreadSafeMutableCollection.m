@@ -56,6 +56,7 @@
 }
 
 - (void)forwardInvocation:(NSInvocation *)origInvocation {
+    [origInvocation retainArguments];
     if ([self.internalObject respondsToSelector:[origInvocation selector]]) {
         __weak typeof(self) weakSelf         = self;
         NSMethodSignature   *methodSignature = [origInvocation methodSignature];
