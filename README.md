@@ -52,7 +52,7 @@ JKLThreadSafeMutableCollection is available through [CocoaPods](http://cocoapods
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod "JKLThreadSafeMutableCollection", '~> 0.1.0'
+pod "JKLThreadSafeMutableCollection", '~> 0.1.1'
 ```
 
 ## Author
